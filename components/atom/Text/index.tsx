@@ -31,7 +31,8 @@ const Text: React.FC<Textprop> = ({
     variant === "subheading" && "text-sub_heading font-semibold",
     variant === "body" && "text-paragraph",
     variant === "span" && "text-label",
-    variant === "nav" && "text-nav font-light",
+    variant === "nav" &&
+      "text-nav font-light hover:text-primary transition-all duration-500 ease-in-out",
     className
   );
 
