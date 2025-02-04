@@ -20,10 +20,10 @@ export default {
   		fontSize: {
   			banner_text: '44px',
   			heading: '40px',
-  			sub_heading: '16px',
-  			paragraph: '14px',
+  			sub_heading: '22px',
+  			paragraph: '16px',
   			nav: '15px',
-  			label: '12px'
+  			label: '14px'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
