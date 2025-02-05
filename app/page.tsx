@@ -1,28 +1,48 @@
+import Hero from "@/public/assets/images/Hero.png";
+
+import Button from "@/components/atom/Button";
 import Text from "@/components/atom/Text";
-import Container from "@/components/Layout/ContainerWrapper";
+import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="h-screen ">
-
-      {/* <div className="w-full"> */}
-      <div className=" max-w-[1440p]">
-        <Text variant="title">
-          Welcome to <span className=" text-primary">Bright Smile </span>Dental
-          Clinic{" "}
-        </Text>
-        
-          <Container className="bg-secondary" heading="Our Client" headingSpan="Testimonials" subheading="Our patients love the professionalism and quality care they receive at our dental clinic. Here are some of their feedbacks">
-            <div>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum adipisci dolorem eos quas inventore vel, ullam unde placeat necessitatibus veritatis ducimus ea vitae nostrum excepturi non cumque consequatur corrupti harum odio deleniti tenetur commodi quod fugiat. Culpa consequuntur sequi illo tempora, esse nisi laboriosam? Maxime impedit placeat cumque sequi et.
+    <main className=" h-[1000vh]">
+      <MaxWidthWrapper>
+        <section className="hero-section  h-[90vh] grid  md:grid-cols-2 w-full">
+          {/* Hero Text */}
+          <div className=" md:mx-auto space-y-[20px] md:content-center">
+            <div className=" max-w-[590px] ">
+              <Text variant="title">
+                Welcome to <span className=" text-primary">Bright Smile</span>{" "}
+                Dental Clinic
+              </Text>
+              <div className=" max-w-[600px]">
+                <Text
+                  variant="span"
+                  className=" text-secondary_foreground  leading-[-1rem]"
+                >
+                  Experience dental care redefined with style and precision.
+                  Experience dental care redefined with style and precision.
+                </Text>
+              </div>
             </div>
-          </Container>
-          <Container heading="Our Client" headingSpan="Testimonials" subheading="We are a dental clinic">
-            <div>
-             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio tempora pariatur dolores illo quas adipisci velit veritatis aliquam maxime at, libero quisquam! Hic cumque ad ratione non unde illum, quisquam earum facilis placeat neque quam, quibusdam obcaecati, magni laboriosam. Consequatur vitae magni quibusdam eum ea. Quae ut vero repellat ad!
+            {/* Buttons */}
+            <div className=" space-x-[15px]">
+              <Button variant="default">Book Your Appointment Now</Button>
+              <Button variant="secondary">Get Started</Button>
             </div>
-          </Container>
-      </div>
+          </div>
+          {/* Background Hero image */}
+          <div className=" bg-slate-600 w-full rounded-bl-[190px] overflow-hidden h-full">
+            <Image
+              src={Hero}
+              className=" object-cover w-full h-full"
+              alt="Hero Image"
+            />
+          </div>
+        </section>
+      </MaxWidthWrapper>
     </main>
   );
 }
