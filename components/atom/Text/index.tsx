@@ -26,11 +26,11 @@ const Text: React.FC<Textprop> = ({
       : "span";
 
   const baseStyle = clsx(
-    variant === "title" && "text-banner_text font-black",
-    variant === "heading" && "text-heading font-black",
+    variant === "title" && " text-[32px] sm:text-banner_text font-black",
+    variant === "heading" && "text-[24px] sm:text-heading font-black",
     variant === "subheading" && "text-sub_heading font-semibold",
     variant === "body" && "text-paragraph",
-    variant === "span" && "text-label",
+    variant === "span" && "sm:text-label font-light text-[12px]",
     variant === "nav" &&
       "text-nav font-light hover:text-primary transition-all duration-500 ease-in-out",
     className

@@ -10,15 +10,15 @@ const ContainerWrapper = ({
 }: {
   children: React.ReactNode;
   className?: string;
-  heading?: string;
-  headingSpan?: string;
-  subheading?: string;
+  heading: string;
+  headingSpan: string;
+  subheading: string;
 }) => {
   return (
     <div
       className={`py-[60px]  flex flex-col justify-center items-center  ${className}`}
     >
-      <div className="pb-[30px] text-center max-w-[632px]">
+      <div className="pb-[30px] text-center max-w-[630px]">
         {/* <h1 className="text-[32px] md:text-heading font-black"> */}
         <Text variant="heading">
           {heading}
