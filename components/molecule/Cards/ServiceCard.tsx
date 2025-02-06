@@ -26,7 +26,7 @@ const ServiceCard = () => {
           </Text>
         </div>
         <div>
-          <Text variant="span" className="text-secondary_foreground">
+          <Text variant="span" className="text-secondary_foreground line-clamp-2">
             Maintain your oral health with regular checkups and preventive care.
           </Text>
         </div>
