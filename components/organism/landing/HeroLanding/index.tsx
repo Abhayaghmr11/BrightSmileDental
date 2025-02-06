@@ -10,9 +10,9 @@ import Image from "next/image";
 const HeroLanding = () => {
   return (
     <MaxWidthWrapper>
-      <section className="hero-section  lg:h-[92vh] grid lg:grid-cols-2 w-full">
+      <section className="hero-section  ipad-pro:h-[92vh] grid ipad-pro:grid-cols-2 w-full">
         {/* Hero Text */}
-        <div className=" md:mx-auto space-y-[20px] py-20 sm:py-0 md:content-center">
+        <div className=" md:mx-auto space-y-[20px] py-20 ipad-pro:py-0 md:content-center">
           <div className=" max-w-[590px] ">
             <Text variant="title">
               Welcome to <span className=" text-primary">Bright Smile</span>{" "}
@@ -32,7 +32,7 @@ const HeroLanding = () => {
           </div>
         </div>
         {/* Background Hero image */}
-        <div className="w-full hidden lg:block rounded-bl-[190px] overflow-hidden h-full">
+        <div className="w-full hidden ipad-pro:block rounded-bl-[190px] overflow-hidden h-full">
           <Image
             src={Hero}
             className=" object-cover w-full h-full"

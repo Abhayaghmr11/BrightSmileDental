@@ -13,6 +13,9 @@ export default {
         scroll:
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
+      screens: {
+        "ipad-pro": "1025px",
+      },
       keyframes: {
         scroll: {
           to: {
