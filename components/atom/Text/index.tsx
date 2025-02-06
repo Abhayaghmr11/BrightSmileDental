@@ -4,7 +4,14 @@ import clsx from "clsx";
 interface Textprop {
   children: React.ReactNode;
   className?: string;
-  variant?: "title" | "heading" | "subheading" | "body" | "span" | "nav";
+  variant?:
+    | "title"
+    | "heading"
+    | "subheading"
+    | "body"
+    | "span"
+    | "nav"
+    | "card_heading";
 }
 
 const Text: React.FC<Textprop> = ({
@@ -21,6 +28,8 @@ const Text: React.FC<Textprop> = ({
       ? "h3"
       : variant === "nav"
       ? "span"
+      : variant === "card_heading"
+      ? "h4"
       : variant === "body"
       ? "p"
       : "span";
@@ -29,6 +38,7 @@ const Text: React.FC<Textprop> = ({
     variant === "title" && " text-[32px] sm:text-banner_text font-black",
     variant === "heading" && "text-[24px] sm:text-heading font-black",
     variant === "subheading" && "text-sub_heading font-semibold",
+    variant === "card_heading" && "text-card_heading",
     variant === "body" && "text-paragraph",
     variant === "span" && "sm:text-label font-light text-[12px]",
     variant === "nav" &&

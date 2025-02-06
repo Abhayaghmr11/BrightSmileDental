@@ -16,9 +16,9 @@ const ContainerWrapper = ({
 }) => {
   return (
     <div
-      className={`py-[60px]  flex flex-col justify-center items-center  ${className}`}
+      className={`py-[60px]  flex flex-col gap-[35px] justify-center items-center  ${className}`}
     >
-      <div className="pb-[30px] text-center max-w-[630px]">
+      <div className="text-center max-w-[630px]">
         {/* <h1 className="text-[32px] md:text-heading font-black"> */}
         <Text variant="heading">
           {heading}

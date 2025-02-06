@@ -1,0 +1,37 @@
+import React from "react";
+import Link from "next/link";
+
+import ContainerWrapper from "@/components/Layout/ContainerWrapper";
+import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
+import { Button } from "@/components/ui/button";
+import ServiceCard from "@/components/molecule/Cards/ServiceCard";
+
+const Services = () => {
+  return (
+    <section>
+      <MaxWidthWrapper>
+        <ContainerWrapper
+          heading="Our Dental"
+          headingSpan="Services"
+          subheading="Discover the range of professional services offered by our clinic."
+        >
+          {/* Button */}
+          <div className="flex w-full justify-end">
+            <Link href={`/services`}>
+              <Button>View All Services</Button>
+            </Link>
+          </div>
+
+          {/* Containers */}
+          <div className="flex flex-row gap-[25px] flex-wrap justify-center ">
+            {[...Array(3)].map((_, index) => (
+              <ServiceCard key={index} />
+            ))}
+          </div>
+        </ContainerWrapper>
+      </MaxWidthWrapper>
+    </section>
+  );
+};
+
+export default Services;

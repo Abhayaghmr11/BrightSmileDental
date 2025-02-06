@@ -35,6 +35,7 @@ export default {
         banner_text: "44px",
         heading: "36px",
         sub_heading: "22px",
+        card_heading: "18px",
         paragraph: "16px",
         nav: "15px",
         label: "14px",
