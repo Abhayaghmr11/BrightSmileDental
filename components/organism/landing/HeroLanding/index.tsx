@@ -10,7 +10,7 @@ import Image from "next/image";
 const HeroLanding = () => {
   return (
     <MaxWidthWrapper>
-      <section className="hero-section  ipad-pro:h-[92vh] grid ipad-pro:grid-cols-2 w-full">
+      <section className="hero-section  ipad-pro:h-[700px] grid ipad-pro:grid-cols-2 w-full">
         {/* Hero Text */}
         <div className=" md:mx-auto space-y-[20px] py-20 ipad-pro:py-0 md:content-center">
           <div className=" max-w-[590px] ">
