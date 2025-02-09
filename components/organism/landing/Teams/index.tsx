@@ -25,7 +25,7 @@ const Teams = () => {
           {/* Team Members Container */}
           {/* padding on container missing, check and reconfirm */}
           <div className="flex flex-row gap-[20px] flex-wrap justify-center ">
-            {[...Array(2)].map((_, index) => (
+            {[...Array(3)].map((_, index) => (
               <TeamCards key={index} />
             ))}
           </div>
