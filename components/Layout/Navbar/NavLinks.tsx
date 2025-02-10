@@ -41,14 +41,14 @@ const NavLinks = () => {
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
-          className=" flex md:hidden w-[25px] h-[25px]"
+          className=" flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
         />
       ) : (
         <RxHamburgerMenu
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
-          className=" flex md:hidden w-[25px] h-[25px]"
+          className=" flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
         />
       )}
 
@@ -59,7 +59,11 @@ const NavLinks = () => {
       >
         <nav className=" relative w-full  flex flex-col gap-[15px] justify-center items-center">
           {navitems?.map((nav) => (
-            <Link key={nav?.path} href={nav?.path}>
+            <Link 
+              key={nav?.path} 
+              href={nav?.path}
+              onClick={()=>setNavOpen(false)}  
+            >
               <Text
                 variant="nav"
                 className={`${
