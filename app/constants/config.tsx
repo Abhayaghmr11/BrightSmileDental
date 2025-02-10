@@ -1,5 +1,7 @@
 export const companyEmail = "brightsmiledental@gmail.com";
 export const phoneNumber = "+977 1-4519594";
+export const companyMoto =
+  "Bright Smile Dental Clinic keeps your smile healthy, bright, and happy!";
 
 export const ServiceData = [
   {

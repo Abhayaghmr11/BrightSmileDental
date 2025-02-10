@@ -13,7 +13,7 @@ const ContactUs = () => {
           headingSpan="Us"
           subheading="Contact us to book an appointment"
         >
-          <div className="flex w-full flex-auto gap-[40px] justify-center items-center">
+          <div className="flex w-full lg:flex-row flex-col flex-auto gap-[40px] justify-center items-center">
             <BannerCardContactUs />
             <FormCard title={"Schedule an"} titleSpan={"Appointment"} />
           </div>

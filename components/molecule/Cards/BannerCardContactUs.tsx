@@ -46,7 +46,7 @@ const BannerCardContactUs = () => {
     },
   ];
   return (
-    <div className="grid grid-cols-2 flex-none gap-[20px] text-white p-[20px] bg-primary/90 rounded-[10px]">
+    <div className="md:grid grid-cols-2 hidden flex-none gap-[20px] text-white p-[20px] bg-primary/90 rounded-[10px]">
       {BannerData?.map((banner, index) => (
         <Banner
           key={`${index} ${banner.title}`}

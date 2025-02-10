@@ -6,8 +6,8 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseOutline } from "react-icons/io5";
 import Link from "next/link";
 
-import Text from "../Text";
-import Button from "../Button";
+import Text from "../../atom/Text";
+import Button from "../../atom/Button";
 import { navitems } from "./config";
 
 const NavLinks = () => {
