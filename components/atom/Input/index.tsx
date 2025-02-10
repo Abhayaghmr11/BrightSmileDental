@@ -11,7 +11,7 @@ interface InputProp extends React.InputHTMLAttributes<HTMLInputElement> {
 const Input: React.FC<InputProp> = ({ icon, className, type, ...prop }) => {
   const [isPasswordVisible, setPasswordVisible] = React.useState(false);
   return (
-    <div className="relative w-min">
+    <div className="relative ">
       {icon && (
         <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
           {icon}

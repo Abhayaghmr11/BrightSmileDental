@@ -3,7 +3,7 @@ import Link from "next/link";
 
 import Image from "next/image";
 import Logo from "@/public/assets/icons/Logo/Logo.svg";
-import MaxWidthWrapper from "../../Layout/MaxWidthWrapper";
+import MaxWidthWrapper from "../MaxWidthWrapper";
 import NavLinks from "./NavLinks";
 
 const Navbar = () => {

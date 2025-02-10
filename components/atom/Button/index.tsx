@@ -12,6 +12,8 @@ interface ButtonProps {
   disabled?: boolean;
   children: React.ReactNode;
   className?: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [key: string]: any; // Add this line to include ...props
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -21,6 +23,7 @@ const Button: React.FC<ButtonProps> = ({
   children,
   size,
   className,
+  ...props
 }) => {
   return (
     <ButtonUi
@@ -29,6 +32,7 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       disabled={disabled}
       className={`${className}`}
+      {...props}
     >
       {disabled ? (
         <>
