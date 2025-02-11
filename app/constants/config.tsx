@@ -3,9 +3,10 @@ export const phoneNumber = "+977 1-4519594";
 export const companyMoto =
   "Bright Smile Dental Clinic keeps your smile healthy, bright, and happy!";
 
-export const aboutUs="At Bright Smile, we believe that everyone deserves a radiant and healthy smile. Located in the heart of Kathmandu, our clinic is committed to providing exceptional dental care in a comfortable and welcoming environment."
+export const aboutUs =
+  "At Bright Smile, we believe that everyone deserves a radiant and healthy smile. Located in the heart of Kathmandu, our clinic is committed to providing exceptional dental care in a comfortable and welcoming environment.";
 
-export const address="Nagpokhari Marg, Kathmandu 44600, Nepal"
+export const address = "Nagpokhari Marg, Kathmandu 44600, Nepal";
 
 export const ServiceData = [
   {
