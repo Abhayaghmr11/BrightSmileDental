@@ -34,7 +34,7 @@ export default {
       fontSize: {
         banner_text: "44px",
         heading: "36px",
-        sub_heading: "22px",
+        sub_heading: "26px",
         card_heading: "18px",
         paragraph: "16px",
         nav: "15px",

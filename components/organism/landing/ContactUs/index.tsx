@@ -5,8 +5,7 @@ import FormCard from "@/components/molecule/Cards/FormCard";
 import React from "react";
 
 const ContactUs = () => {
-  return (
-    <div>
+  return (    
       <MaxWidthWrapper>
         <ContainerWrapper
           heading="Contact"
@@ -19,7 +18,6 @@ const ContactUs = () => {
           </div>
         </ContainerWrapper>
       </MaxWidthWrapper>
-    </div>
   );
 };
 

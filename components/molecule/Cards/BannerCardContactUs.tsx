@@ -6,6 +6,7 @@ import { CiMail } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { companyEmail, phoneNumber } from "@/app/constants/config";
 import { CiMapPin } from "react-icons/ci";
+import { address } from "@/app/constants/config";
 
 interface BannerData {
   Icon: IconType;
@@ -42,7 +43,7 @@ const BannerCardContactUs = () => {
     {
       Icon: CiMapPin,
       title: "Address",
-      data: "New York, Street 5 House 11",
+      data: address,
     },
   ];
   return (
