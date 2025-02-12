@@ -1,5 +1,7 @@
 import React from "react";
+import { Suspense } from "react";
 
+import { Skeleton } from "@/components/ui/skeleton";
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import FilterComponent from "@/components/molecule/FilterComponent";
@@ -19,7 +21,16 @@ const Services = () => {
         subheading="Our patients love the professionalism and quality care they receive at our dental clinic. Here are some of their feedbacks:"
       >
         <div className=" w-full">
-          <FilterComponent />
+          <Suspense
+            fallback={
+              <div className="flex items-center justify-between flex-wrap">
+                <Skeleton className="w-[250px] h-[50px] rounded-md" />
+                <Skeleton className="w-[250px] h-[50px] rounded-md" />
+              </div>
+            }
+          >
+            <FilterComponent />
+          </Suspense>
         </div>
       </ContainerWrapper>
     </MaxWidthWrapper>
