@@ -1,7 +1,7 @@
 import { CiClock1 } from "react-icons/ci";
 import { SlPhone } from "react-icons/sl";
 import { CiMapPin } from "react-icons/ci";
-
+import { address } from "@/app/constants/config";
 import { BannerItem } from "@/app/interface/types";
 
 import { phoneNumber, companyEmail } from "@/app/constants/config";
@@ -38,7 +38,7 @@ const bannerData: BannerItem[] = [
     Icon: CiMapPin,
     detail: [
       {
-        data: "New York, Street 5 House 11",
+        data: address,
       },
     ],
   },

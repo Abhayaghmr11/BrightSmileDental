@@ -12,7 +12,7 @@ const ContainerWrapper = ({
   className?: string;
   heading: string;
   headingSpan: string;
-  subheading: string;
+  subheading?: string;
 }) => {
   return (
     <div
