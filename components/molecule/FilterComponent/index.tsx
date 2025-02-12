@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/select";
 
 import Input from "@/components/atom/Input";
-import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function useDebounce(callback: (...args: any[]) => void, delay: number) {
@@ -68,35 +67,33 @@ const FilterComponent = () => {
   };
 
   return (
-    <MaxWidthWrapper>
-      <div className="w-full flex justify-between items-center">
-        <Input
-          onChange={(e) => handleSearch(e.target.value)}
-          defaultValue={searchParams.get("search")?.toString() || ""}
-          icon={<CiSearch className=" w-[20px] h-[20px] text-[#6E6E6E]" />}
-          placeholder="Search"
-          type="text"
-        />
+    <div className="w-full flex justify-between items-center">
+      <Input
+        onChange={(e) => handleSearch(e.target.value)}
+        defaultValue={searchParams.get("search")?.toString() || ""}
+        icon={<CiSearch className=" w-[20px] h-[20px] text-[#6E6E6E]" />}
+        placeholder="Search"
+        type="text"
+      />
 
-        <Select
-          value={searchParams.get("sort")?.toString() || ""}
-          onValueChange={(value) => handleSort(value)}
-        >
-          <SelectTrigger className="w-[180px]">
-            <SelectValue
-              className=" text-neutral-500"
-              placeholder="Sort by Price"
-            />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectGroup>
-              <SelectItem value="high">High to Low</SelectItem>
-              <SelectItem value="low">Low to High</SelectItem>
-            </SelectGroup>
-          </SelectContent>
-        </Select>
-      </div>
-    </MaxWidthWrapper>
+      <Select
+        value={searchParams.get("sort")?.toString() || ""}
+        onValueChange={(value) => handleSort(value)}
+      >
+        <SelectTrigger className="w-[180px]">
+          <SelectValue
+            className=" text-neutral-500"
+            placeholder="Sort by Price"
+          />
+        </SelectTrigger>
+        <SelectContent>
+          <SelectGroup>
+            <SelectItem value="high">High to Low</SelectItem>
+            <SelectItem value="low">Low to High</SelectItem>
+          </SelectGroup>
+        </SelectContent>
+      </Select>
+    </div>
   );
 };
 
