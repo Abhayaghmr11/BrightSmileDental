@@ -5,19 +5,19 @@ import FormCard from "@/components/molecule/Cards/FormCard";
 import React from "react";
 
 const ContactUs = () => {
-  return (    
-      <MaxWidthWrapper>
-        <ContainerWrapper
-          heading="Contact"
-          headingSpan="Us"
-          subheading="Contact us to book an appointment"
-        >
-          <div className="flex w-full lg:flex-row flex-col flex-auto gap-[40px] justify-center items-center">
-            <BannerCardContactUs />
-            <FormCard title={"Schedule an"} titleSpan={"Appointment"} />
-          </div>
-        </ContainerWrapper>
-      </MaxWidthWrapper>
+  return (
+    <MaxWidthWrapper>
+      <ContainerWrapper
+        heading="Contact"
+        headingSpan="Us"
+        subheading="Contact us to book an appointment"
+      >
+        <div className="flex w-full lg:flex-row flex-col flex-auto gap-[40px] justify-center items-center">
+          <BannerCardContactUs />
+          <FormCard title={"Schedule an"} titleSpan={"Appointment"} />
+        </div>
+      </ContainerWrapper>
+    </MaxWidthWrapper>
   );
 };
 

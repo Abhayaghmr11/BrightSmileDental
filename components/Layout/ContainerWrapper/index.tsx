@@ -16,9 +16,9 @@ const ContainerWrapper = ({
 }) => {
   return (
     <div
-      className={`py-[60px]  flex flex-col gap-[35px] justify-center items-center  ${className}`}
+      className={`py-[70px]  flex flex-col gap-[35px] justify-center items-center  ${className}`}
     >
-      <div className="text-center max-w-[630px]">
+      <div className="flex flex-col gap-[6px] text-center max-w-[630px]">
         {/* <h1 className="text-[32px] md:text-heading font-black"> */}
         <Text variant="heading">
           {heading}
@@ -27,7 +27,7 @@ const ContainerWrapper = ({
 
         {/* </h1> */}
 
-        <Text variant="span" className=" text-secondary_foreground">
+        <Text variant="span" className=" text-secondary_foreground italic">
           {subheading}
         </Text>
       </div>

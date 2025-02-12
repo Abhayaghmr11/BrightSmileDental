@@ -6,6 +6,8 @@ import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import FilterComponent from "@/components/molecule/FilterComponent";
 
+import LoadingLottie from "@/components/molecule/LoadingLottie";
+
 import { ServiceData } from "../constants/config";
 
 const Services = () => {
@@ -32,6 +34,7 @@ const Services = () => {
             <FilterComponent />
           </Suspense>
         </div>
+        <LoadingLottie />
       </ContainerWrapper>
     </MaxWidthWrapper>
   );

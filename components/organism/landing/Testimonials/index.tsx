@@ -39,9 +39,9 @@ const Testimonials = () => {
     <div className=" bg-secondary">
       <MaxWidthWrapper>
         <ContainerWrapper
-          heading="Our Clients"
+          heading="Clients"
           headingSpan="Testimonials"
-          subheading="Our patients love the professionalism and quality care they receive at our dental clinic. Here are some of their feedbacks:"
+          subheading="Our patients love the professionalism and quality care they receive at our dental clinic."
         >
           <InfiniteMovingCards
             items={testimonials}
