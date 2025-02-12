@@ -35,7 +35,7 @@ const AboutUs = () => {
             <Image
               src={TeamDoctor}
               alt="About Us"
-              className="md:w-[500px]"
+              className="md:w-[500px]  rounded-[20px]"
               style={{
                 width: "100%",
                 height: "auto",
