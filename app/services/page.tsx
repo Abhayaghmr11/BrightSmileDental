@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Suspense } from "react";
 
@@ -5,6 +6,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import FilterComponent from "@/components/molecule/FilterComponent";
+import Lottie from "lottie-react";
+
+import LoadingAnimation from "@/public/assets/animations/logooooo4.json";
 
 import { ServiceData } from "../constants/config";
 
@@ -32,6 +36,7 @@ const Services = () => {
             <FilterComponent />
           </Suspense>
         </div>
+        <Lottie style={{ height: 110 }} animationData={LoadingAnimation} />
       </ContainerWrapper>
     </MaxWidthWrapper>
   );
