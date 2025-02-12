@@ -44,4 +44,4 @@ const WhyChooseUs = () => {
     )
 }
 
-export default WhyChooseUs
+export default WhyChooseUs;
