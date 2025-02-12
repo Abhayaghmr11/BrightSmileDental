@@ -1,9 +1,8 @@
 import ContainerWrapper from '@/components/Layout/ContainerWrapper'
 import MaxWidthWrapper from '@/components/Layout/MaxWidthWrapper'
-import Image from 'next/image'
+import WhyChooseUs from '@/components/molecule/Cards/WhyChooseUs'
 import React from 'react'
 
-import Chooseus from "@/public/assets/images/Chooseus.png"
 
 const ChooseUs = () => {
     return (
@@ -11,25 +10,10 @@ const ChooseUs = () => {
             <ContainerWrapper
                 heading='Why Choose'
                 headingSpan='Us'>
-                <div className='flex flex-col md:flex-row flex-wrap'>
-
-                    {/* Conatiner */}
-                    <div className='max-w-[395px] flex flex-col gap-[10px] cursor-pointer rounded-[20px] p-[10px] border border-border_color'>
-                        {/* image */}
-                        <div>
-                            <Image 
-                                src={Chooseus} 
-                                alt="Choose us" 
-                                width={375}
-                                height={220}
-                                className='object-cover rounded-[10px] w-[375px] h-[220px] overflow-hidden' />
-                        </div>
-                        {/* heading test */}
-                        <div></div>
-                        {/* numbering */}
-                        <div></div>
-                    </div>
-
+                <div className='flex flex-col gap-[25px] lg:gap-[60px] md:flex-row flex-wrap justify-center'>
+                {[...Array(3)].map((_, index) => (
+              <WhyChooseUs key={index} />
+            ))}
                 </div>
             </ContainerWrapper>
         </MaxWidthWrapper>
