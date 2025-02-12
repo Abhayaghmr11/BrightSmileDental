@@ -6,7 +6,6 @@ import Image from 'next/image';
 import Text from '@/components/atom/Text'
 
 import { aboutUs } from '@/app/constants/config';
-import { section } from 'motion/react-client';
 
 const AboutUs = () => {
     return (
