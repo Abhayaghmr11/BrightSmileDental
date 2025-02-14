@@ -1,13 +1,18 @@
+"use client";
 import Image from "next/image";
 
 import { FaArrowRight } from "react-icons/fa6";
 
 import Text from "@/components/atom/Text";
 import Hero from "@/public/assets/images/Dental.svg";
+import { service } from "@/app/interface/types";
 
-const ServiceCard = () => {
+const ServiceCard = ({ service }: { service: service }) => {
   return (
-    <div className="container transition-all flex flex-col gap-[20px] ease-in-out duration-300 cursor-pointer max-w-[420px] border border-border_color p-[10px] rounded-[20px] hover:shadow-md">
+    <div
+      onClick={() => console.log("first")}
+      className="container transition-all flex flex-col gap-[20px] ease-in-out duration-300 cursor-pointer max-w-[420px] border border-border_color p-[10px] rounded-[20px] hover:shadow-md"
+    >
       <div>
         <Image
           src={Hero}
@@ -19,14 +24,20 @@ const ServiceCard = () => {
         />
       </div>
 
-      <div className="flex flex-col gap-[5px] px-[10px]">
-        <div>
+      <div className="flex flex-col gap-[10px] px-[10px]">
+        <div className="flex flex-row justify-between items-center w-full">
           <Text variant="card_heading" className="text-black  ">
-            Dental Implants
+            {service?.service}
+          </Text>
+          <Text variant="span" className="text-primary font-normal  ">
+            RS. {service?.price}
           </Text>
         </div>
         <div>
-          <Text variant="span" className="text-secondary_foreground line-clamp-2">
+          <Text
+            variant="span"
+            className="text-secondary_foreground line-clamp-2"
+          >
             Maintain your oral health with regular checkups and preventive care.
           </Text>
         </div>

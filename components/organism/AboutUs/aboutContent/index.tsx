@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <section className="bg-secondary relative md:py-[100px]">
       <MaxWidthWrapper>
-        <div className="flex flex-col flex-auto lg:flex-row w-full gap-[40px] items-center justify-center">
+        <div className="flex  flex-col pt-[60px] md:pt-0  flex-auto lg:flex-row w-full gap-[40px] items-center justify-center">
           <div className="flex md:max-w-[700px] flex-col gap-[30px]">
             <Text
               variant="heading"
@@ -26,7 +26,7 @@ const AboutUs = () => {
               {aboutUs}
             </Text>
 
-            <div className="  text-[20px]">
+            <div className=" text-center font-bold md:text-left mt-2 text-[30px]">
               Committed to
               <FlipWords words={words} />
             </div>

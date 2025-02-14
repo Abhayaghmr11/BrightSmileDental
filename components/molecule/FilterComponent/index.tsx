@@ -44,7 +44,7 @@ const FilterComponent = () => {
     const params = new URLSearchParams(searchParams);
 
     if (term) {
-      params.set("search", term);
+      params.set("search", term.trim());
     } else {
       params.delete("search");
     }

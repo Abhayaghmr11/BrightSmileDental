@@ -6,15 +6,30 @@ import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import FilterComponent from "@/components/molecule/FilterComponent";
 
-import LoadingLottie from "@/components/molecule/LoadingLottie";
-
 import { ServiceData } from "../constants/config";
+import ServiceContent from "@/components/molecule/ServiceContent";
 
-const Services = () => {
+const Services = async ({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) => {
   const services = ServiceData.flatMap((category) =>
     category.section.map((service) => service)
   );
-  console.log(services);
+  const searchParam = await searchParams;
+
+  // Filtering Services based on Search Query
+  const filteredServices = services.filter((service) =>
+    service?.service
+      .toLocaleLowerCase()
+      .includes(searchParam?.search?.toString().toLocaleLowerCase() || "")
+  );
+
+  const sortedServices = filteredServices.sort((a, b) =>
+    searchParam?.sort === "low" ? a.price - b.price : b.price - a.price
+  );
+
   return (
     <MaxWidthWrapper>
       <ContainerWrapper
@@ -22,6 +37,7 @@ const Services = () => {
         headingSpan="Services"
         subheading="Our patients love the professionalism and quality care they receive at our dental clinic. Here are some of their feedbacks:"
       >
+        {/* Filter */}
         <div className=" w-full">
           <Suspense
             fallback={
@@ -34,7 +50,8 @@ const Services = () => {
             <FilterComponent />
           </Suspense>
         </div>
-        <LoadingLottie />
+        {/* Service Content */}
+        <ServiceContent services={sortedServices} />
       </ContainerWrapper>
     </MaxWidthWrapper>
   );

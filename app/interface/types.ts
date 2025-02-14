@@ -10,3 +10,9 @@ export type BannerItem = {
   detail: BannerDetail[];
 };
 
+export type service = {
+  id: string;
+  service: string;
+  details: string;
+  price: number;
+};
