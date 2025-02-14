@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { ServiceData } from "@/app/constants/config";
 
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
@@ -7,6 +8,9 @@ import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/molecule/Cards/ServiceCard";
 
 const Services = () => {
+  console.log(
+    ServiceData?.flatMap((category) => category?.section).slice(0, 3)
+  );
   return (
     <section>
       <MaxWidthWrapper>
@@ -24,9 +28,11 @@ const Services = () => {
 
           {/* Containers */}
           <div className="flex flex-row gap-[25px] flex-wrap justify-center ">
-            {[...Array(3)].map((_, index) => (
-              <ServiceCard key={index} />
-            ))}
+            {ServiceData?.flatMap((category) => category?.section)
+              .slice(0, 3)
+              .map((service) => (
+                <ServiceCard service={service} key={service.id} />
+              ))}
           </div>
         </ContainerWrapper>
       </MaxWidthWrapper>
