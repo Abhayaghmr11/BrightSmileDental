@@ -5,7 +5,7 @@ import dynamic from "next/dynamic";
 
 const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
-import LoadingAnimation from "@/public/assets/animations/logooooo4.json";
+import LoadingAnimation from "@/public/assets/animations/Loading.json";
 
 const LoadingLottie = () => {
   return <Lottie style={{ height: 110 }} animationData={LoadingAnimation} />;
