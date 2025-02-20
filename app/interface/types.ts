@@ -16,3 +16,11 @@ export type service = {
   details: string;
   price: number;
 };
+
+export type team = {
+  id: number;
+  name: string;
+  designation: string;
+  NMC_id?: string;
+  description: string;
+};

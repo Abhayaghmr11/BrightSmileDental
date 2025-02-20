@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -8,9 +9,10 @@ import Hero from "@/public/assets/images/Dental.svg";
 import { service } from "@/app/interface/types";
 
 const ServiceCard = ({ service }: { service: service }) => {
+  const router = useRouter();
   return (
     <div
-      onClick={() => console.log("first")}
+      onClick={() => router.push(`/services/${service?.id}`)}
       className="container transition-all flex flex-col gap-[20px] ease-in-out duration-300 cursor-pointer max-w-[420px] border border-border_color p-[10px] rounded-[20px] hover:shadow-md"
     >
       <div>

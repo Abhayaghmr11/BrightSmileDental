@@ -8,9 +8,6 @@ import { Button } from "@/components/ui/button";
 import ServiceCard from "@/components/molecule/Cards/ServiceCard";
 
 const Services = () => {
-  console.log(
-    ServiceData?.flatMap((category) => category?.section).slice(0, 3)
-  );
   return (
     <section>
       <MaxWidthWrapper>

@@ -16,15 +16,18 @@ const NavLinks = () => {
 
   return (
     <>
-      <div className=" hidden md:flex items-center gap-[42px] ">
+      <div className="hidden md:flex items-center gap-[42px]">
         {/* Nav items */}
-        <nav className=" flex gap-[15px] items-center">
+        <nav className="flex gap-[15px] items-center">
           {navitems?.map((nav) => (
             <Link key={nav?.path} href={nav?.path}>
               <Text
                 variant="nav"
                 className={`${
-                  pathname === nav?.path ? "text-primary font-normal" : ""
+                  pathname === nav?.path ||
+                  (nav?.path !== "/" && pathname.startsWith(nav?.path))
+                    ? "text-primary font-normal"
+                    : ""
                 }`}
               >
                 {nav?.name}
@@ -32,7 +35,7 @@ const NavLinks = () => {
             </Link>
           ))}
         </nav>
-        <Button variant="default" className=" font-black ml-5">
+        <Button variant="default" className="font-black ml-5">
           Get Quotation
         </Button>
       </div>
@@ -41,33 +44,36 @@ const NavLinks = () => {
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
-          className=" flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
+          className="flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
         />
       ) : (
         <RxHamburgerMenu
           onClick={() => {
             setNavOpen((prev) => !prev);
           }}
-          className=" flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
+          className="flex md:hidden w-[25px] h-[25px] transition ease-in-out duration-700"
         />
       )}
 
       <div
-        className={`md:hidden border sm:w-[60%] border-border_color transition-all  duration-700 ease-in-out fixed z-10 top-0 flex flex-col pt-[50px] px-[20px] gap-[15px] bg-white  h-full ${
+        className={`md:hidden border sm:w-[60%] border-border_color transition-all duration-700 ease-in-out fixed z-10 top-0 flex flex-col pt-[50px] px-[20px] gap-[15px] bg-white h-full ${
           navOpen ? "left-0" : "fixed left-[-100%] ease-in-out duration-700"
         }`}
       >
-        <nav className=" relative w-full  flex flex-col gap-[15px] justify-center items-center">
+        <nav className="relative w-full flex flex-col gap-[15px] justify-center items-center">
           {navitems?.map((nav) => (
-            <Link 
-              key={nav?.path} 
+            <Link
+              key={nav?.path}
               href={nav?.path}
-              onClick={()=>setNavOpen(false)}  
+              onClick={() => setNavOpen(false)}
             >
               <Text
                 variant="nav"
                 className={`${
-                  pathname === nav?.path ? "text-primary font-normal" : ""
+                  pathname === nav?.path ||
+                  (nav?.path !== "/" && pathname.startsWith(nav?.path))
+                    ? "text-primary font-normal"
+                    : ""
                 }`}
               >
                 {nav?.name}
@@ -75,7 +81,7 @@ const NavLinks = () => {
             </Link>
           ))}
         </nav>
-        <Button variant="default" className=" font-black ml-5">
+        <Button variant="default" className="font-black ml-5">
           Get Quotation
         </Button>
       </div>

@@ -15,6 +15,7 @@
     "clsx": "^2.1.1",
     "formik": "^2.4.6",
     "framer-motion": "^12.4.2",
+    "jodit-react": "^5.2.14",
     "lottie-react": "^2.4.1",
     "lucide-react": "^0.474.0",
     "motion": "^12.4.2",

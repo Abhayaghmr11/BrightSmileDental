@@ -37,9 +37,9 @@ const Text: React.FC<Textprop> = ({
   const baseStyle = clsx(
     variant === "title" && " text-[32px] sm:text-banner_text font-black",
     variant === "heading" && "text-[24px] sm:text-heading font-black",
-    variant === "subheading" && "text-sub_heading font-semibold",
+    variant === "subheading" && "ipad-pro:text-sub_heading text-[20px] font-semibold ",
     variant === "card_heading" && "text-card_heading",
-    variant === "body" && "text-paragraph",
+    variant === "body" && "ipad-pro:text-paragraph text-[14px]",
     variant === "span" && "sm:text-label font-light text-[12px]",
     variant === "nav" &&
       "text-nav font-light hover:text-primary transition-all duration-500 ease-in-out",
