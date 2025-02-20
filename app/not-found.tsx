@@ -9,9 +9,9 @@ import NotFoundLottie from "@/components/molecule/404Lottie";
 const NotFound = () => {
   const router = useRouter();
   return (
-    <main className=" max-w-[1440px] mx-auto px-[20px] md:px-[60px] ipad-pro:h-[550px] flex items-center justify-center w-full">
+    <main className=" max-w-[1440px] mx-auto px-[20px] md:px-[60px] ipad-pro:h-[550px] flex ipad-pro:flex-row flex-col items-center justify-center w-full py-[25px]">
       <section>
-        <div className="flex flex-col gap-1 ">
+        <div className="flex flex-col  items-center ipad-pro:items-start gap-1 ">
           <Text variant="heading" className=" text-primary">
             Oops, <span className=" italic">404!</span>
           </Text>
@@ -19,7 +19,7 @@ const NotFound = () => {
             <span className=" text-black font-semibold">Nothing</span> here...
           </Text>
           <Text
-            className=" text-secondary_foreground font-light ipad-pro:max-w-[650px]"
+            className=" text-secondary_foreground font-light ipad-pro:max-w-[650px] text-center ipad-pro:text-left"
             variant="body"
           >
             {`We couldn't find the page you were looking for. Please check the URL or click the button below to return to the homepage.`}
