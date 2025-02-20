@@ -16,6 +16,20 @@ export const ServiceData = [
     section: [
       {
         id: uuidv4(),
+        service: "Grade I Extraction",
+        sub_desc: "A basic dental extraction procedure for teeth that are easy to remove with minimal complexity.",
+        details: `<p>A straightforward dental extraction procedure designed for teeth that are fully erupted, intact, and have simple root structures. This procedure is typically performed when a tooth is no longer viable due to decay, damage, or other dental concerns.</p><ul><li>Performed using basic extraction tools such as forceps and elevators.</li><li>Typically requires only local anesthesia, ensuring a quick and comfortable experience.</li><li>Minimal trauma to surrounding tissues, leading to faster healing and recovery.</li></ul><p>The procedure is quick and efficient, requiring minimal intervention, with most extractions completed in a short timeframe.</p><p>Healing time is generally fast, with initial recovery taking about 5-7 days and full healing occurring within 1-2 weeks.</p>`,
+        price: 300,
+      },
+      {
+        id: uuidv4(),
+        service: "Primary Tooth (Baby Tooth) Extraction",
+        sub_desc: "A specialized extraction procedure for baby teeth that need removal due to decay, crowding, or delayed exfoliation.",
+        details: `<p>A simple and gentle dental extraction procedure for primary (baby) teeth that need to be removed to facilitate proper dental development. This is typically done when a baby tooth does not fall out naturally, is severely decayed, or is causing misalignment.</p><ul><li>Performed using minimally invasive techniques to ensure comfort for young patients.</li><li>Usually requires only a small amount of local anesthesia, with sedation options available if needed.</li><li>Focuses on preserving the integrity of surrounding developing permanent teeth.</li></ul><p>The procedure is quick, ensuring minimal discomfort, and is tailored to the child's needs for a stress-free experience.</p><p>Healing is rapid, usually within 3-5 days, with complete gum closure in about a week.</p>`,
+        price: 200,
+      },
+      {
+        id: uuidv4(),
         service: "Grade II Extraction",
         sub_desc: "A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal.",
         details: `<p>A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal. This treatment addresses teeth that may be partially broken, have curved or multiple roots, or are situated in areas requiring additional surgical techniques. The procedure requires careful planning and execution to ensure complete removal while minimizing trauma to surrounding tissues. Special consideration is given to anatomical structures and potential complications that may arise during the extraction process.</p><ul><li>Requires slightly more invasive techniques including potential sectioning of the tooth and bone removal.</li><li>Performed under local anesthesia with the option of additional sedation for patient comfort.</li><li>May involve stitches for proper closure and optimal tissue healing.</li></ul><p>The procedure is well-managed with minimal risks, employing modern surgical techniques and equipment to ensure a successful outcome even in more challenging cases. Careful attention is paid to preserving surrounding bone and soft tissue.</p><p>Healing can take a little longer compared to simpler extractions, typically requiring 7-10 days for initial recovery with complete healing achieved within 2-3 weeks.</p>`,
