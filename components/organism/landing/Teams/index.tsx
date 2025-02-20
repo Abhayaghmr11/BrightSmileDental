@@ -2,6 +2,8 @@ import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import TeamCards from "@/components/molecule/Cards/TeamCards";
 
+import { Team } from "@/app/constants/config";
+
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -24,9 +26,9 @@ const Teams = () => {
           {/* Team Members Container */}
           {/* padding on container missing, check and reconfirm */}
           <div className="flex flex-row gap-[20px] flex-wrap justify-center ">
-            {[...Array(3)].map((_, index) => (
-              <TeamCards key={index} />
-            ))}
+            {Team?.map((teamMember) => (
+              <TeamCards teams={teamMember} key={teamMember.id} />
+            )).slice(0, 3)}
           </div>
         </ContainerWrapper>
       </MaxWidthWrapper>

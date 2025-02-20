@@ -1104,6 +1104,7 @@ export const ServiceData = [
 
 export const Team = [
   {
+    id: 1,
     name: "Dr. Binita Adhikari",
     designation: "General Practitioner",
     NMC_id: "NMC 2687",
@@ -1111,6 +1112,7 @@ export const Team = [
       "Dr. Binita Adhikari is a NMC registered doctor with NMC number 2687. She holds a BDS degree and specializes as a Dental Surgeon.",
   },
   {
+    id: 2,
     name: "Dr. Sachin Agrawal",
     designation: "General Practitioner",
     NMC_id: "NMC 3216",
@@ -1118,6 +1120,7 @@ export const Team = [
       "Dr. Sachin Agrawal is a NMC registered doctor with NMC number 3216. He holds a BDS degree and specializes as a Dental Surgeon.",
   },
   {
+    id: 3,
     name: "Dr. Sabin Giri",
     designation: "Extraction",
     NMC_id: "NMC 3914",
@@ -1125,6 +1128,7 @@ export const Team = [
       "Dr. Sabin Giri holds a BDS degree from Bangladesh and specializes in extractions and dental surgery.",
   },
   {
+    id: 4,
     name: "Dr. Shashi Bhusan Singh",
     designation: "Implants",
     NMC_id: "NMC 3449",
@@ -1132,6 +1136,7 @@ export const Team = [
       "Dr. Shashi Bhushan Singh specializes in implants and dental care, holding a BDS degree from India.",
   },
   {
+    id: 5,
     name: "Dr. Alok Sagtani",
     designation: "Oral and Maxillofacial Surgeon",
     NMC_id: "NMC 3844",
@@ -1139,6 +1144,7 @@ export const Team = [
       "Dr. Alok Sagtani is a maxillofacial surgeon, specializing in surgeries related to the mouth, jaw, and face.",
   },
   {
+    id: 6,
     name: "Dr. Ishfa Banu Haque",
     designation: "Oral and Maxillofacial Surgeon",
     NMC_id: "NMC 5130",
@@ -1146,6 +1152,7 @@ export const Team = [
       "Dr. Ishfa Banu Haque specializes in oral and maxillofacial surgery and holds a BDS degree from Nepal.",
   },
   {
+    id: 7,
     name: "Dr. Ranjita Shrestha",
     designation: "Periodontist",
     NMC_id: "NMC 5153",
@@ -1153,6 +1160,7 @@ export const Team = [
       "Dr. Ranjita Shrestha is a periodontist with expertise in treating gum diseases and maintaining oral health.",
   },
   {
+    id: 8,
     name: "Dr. Rinky Nyachhyon",
     designation: "Oral Medicine and Radiology",
     NMC_id: "NMC 3201",
@@ -1160,6 +1168,7 @@ export const Team = [
       "Dr. Rinky Nyachhyon specializes in oral medicine and radiology, focusing on diagnosing and treating oral conditions.",
   },
   {
+    id: 9,
     name: "Dr. Ameena Pradhan",
     designation: "Periodontist",
     NMC_id: "NMC 3013",
@@ -1167,30 +1176,35 @@ export const Team = [
       "Dr. Ameena Pradhan is a periodontist with an MDS degree, specializing in treating gum and periodontal diseases.",
   },
   {
+    id: 10,
     name: "Reshma Shakya",
     designation: "Accountant/Receptionist",
     description:
       "Reshma Shakya is an accountant/receptionist, managing financial records and administrative tasks for smooth office operations.",
   },
   {
+    id: 11,
     name: "Jitendra Kumar",
     designation: "Dental Hygienist",
     description:
       "Jitendra Kumar specializes in maintaining oral health, providing preventive care, and educating patients on oral hygiene practices.",
   },
   {
+    id: 12,
     name: "Binita Dulal",
     designation: "Dental Hygienist",
     description:
       "Binita Dulal specializes in preventive dental care, helping patients maintain optimal oral hygiene through cleaning and education.",
   },
   {
+    id: 13,
     name: "Parbati Gurung",
     designation: "Dental Hygienist",
     description:
       "Parbati Gurung provides professional teeth cleaning and educates patients on maintaining good oral health.",
   },
   {
+    id: 14,
     name: "Justin Shrestha",
     designation: "Dental Hygienist",
     description:
