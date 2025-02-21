@@ -30,10 +30,13 @@ const TeamCards = ({ teams }: { teams: team }) => {
           <Text variant="card_heading" className="text-black">
             {teams.name}
           </Text>
+          <div className='flex justify-between py-[5px]'>
           <Text variant="span" className="text-primary">{teams.designation}</Text>
+          <Text variant='span' className='text-primary'>{teams?.NMC_id}</Text>
+          </div>
         </div>
         <div>
-          <Text variant="span" className="text-secondary_foreground line-clamp-3">{teams.description}</Text>
+          <Text variant="span" className="text-secondary_foreground line-clamp-3 h-[55px]">{teams.description}</Text>
         </div>
 
         {/* Links */}

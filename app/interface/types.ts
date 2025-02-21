@@ -11,10 +11,12 @@ export type BannerItem = {
 };
 
 export type service = {
-  id: string;
+  id: number;
   service: string;
   details: string;
   price: number;
+  sub_desc:string;
+
 };
 
 export type team = {
