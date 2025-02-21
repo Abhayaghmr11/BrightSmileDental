@@ -15,6 +15,8 @@ export type service = {
   service: string;
   details: string;
   price: number;
+  sub_desc:string;
+
 };
 
 export type team = {

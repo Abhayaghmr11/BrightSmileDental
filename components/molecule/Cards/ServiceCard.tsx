@@ -27,11 +27,11 @@ const ServiceCard = ({ service }: { service: service }) => {
       </div>
 
       <div className="flex flex-col gap-[10px] px-[10px]">
-        <div className="flex flex-row justify-between items-center w-full">
-          <Text variant="card_heading" className="text-black  ">
+        <div className="flex flex-row justify-between gap-[3px] w-full flex-grow">
+          <Text variant="card_heading" className="text-black h-[45px] line-clamp-2">
             {service?.service}
           </Text>
-          <Text variant="span" className="text-primary font-normal  ">
+          <Text variant="span" className="text-primary font-normal min-w-[70px] ">
             RS. {service?.price}
           </Text>
         </div>
@@ -40,7 +40,7 @@ const ServiceCard = ({ service }: { service: service }) => {
             variant="span"
             className="text-secondary_foreground line-clamp-2"
           >
-            Maintain your oral health with regular checkups and preventive care.
+            {service?.sub_desc}
           </Text>
         </div>
       </div>
