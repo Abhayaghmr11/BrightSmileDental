@@ -1,4 +1,3 @@
-import { v4 as uuidv4 } from "uuid";
 
 export const companyEmail = "brightsmiledental@gmail.com";
 export const phoneNumber = "+977 1-4519594";
