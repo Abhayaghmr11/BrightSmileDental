@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
                         className='object-cover rounded-[10px] w-[375px] h-[220px] overflow-hidden' />
                 </div>
                 {/* heading test */}
-                <div className='px-[10px]'>
+                <div className='px-[10px] space-y-1'>
                     <div>
                         <Text variant='body'>
                             State of the Art Technology

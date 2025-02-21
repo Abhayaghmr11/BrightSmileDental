@@ -1,3 +1,4 @@
+
 export const companyEmail = "brightsmiledental@gmail.com";
 export const phoneNumber = "+977 1-4519594";
 export const companyMoto =
@@ -39,7 +40,7 @@ export const ServiceData = [
         sub_desc:
           "A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal.",
         details: `<p>A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal. This treatment addresses teeth that may be partially broken, have curved or multiple roots, or are situated in areas requiring additional surgical techniques. The procedure requires careful planning and execution to ensure complete removal while minimizing trauma to surrounding tissues. Special consideration is given to anatomical structures and potential complications that may arise during the extraction process.</p><ul><li>Requires slightly more invasive techniques including potential sectioning of the tooth and bone removal.</li><li>Performed under local anesthesia with the option of additional sedation for patient comfort.</li><li>May involve stitches for proper closure and optimal tissue healing.</li></ul><p>The procedure is well-managed with minimal risks, employing modern surgical techniques and equipment to ensure a successful outcome even in more challenging cases. Careful attention is paid to preserving surrounding bone and soft tissue.</p><p>Healing can take a little longer compared to simpler extractions, typically requiring 7-10 days for initial recovery with complete healing achieved within 2-3 weeks.</p>`,
-        price: 500000000,
+        price: 500,
       },
       {
         id: serviceCounter++,

@@ -36,7 +36,7 @@ const TeamCards = ({ teams }: { teams: team }) => {
           </div>
         </div>
         <div>
-          <Text variant="span" className="text-secondary_foreground line-clamp-3">{teams.description}</Text>
+          <Text variant="span" className="text-secondary_foreground line-clamp-3 h-[55px]">{teams.description}</Text>
         </div>
 
         {/* Links */}
