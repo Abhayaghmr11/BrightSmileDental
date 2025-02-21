@@ -82,11 +82,11 @@ const AboutUs = () => {
   // };
 
   return (
-    <section className="bg-secondary relative md:py-[100px]">
+    <section className="bg-secondary relative">
       <MaxWidthWrapper>
-        <div className="h-full w-[90vw]">
-          {/* This is the main initialization of the Jodit editor */}
-          {/* <JoditEditor
+        {/* <div className="h-full w-[90vw]"> */}
+        {/* This is the main initialization of the Jodit editor */}
+        {/* <JoditEditor
             ref={editor} //This is important
             value={content} //This is important
             config={config} //Only use when you declare some custom configs
@@ -94,13 +94,13 @@ const AboutUs = () => {
             className="w-full h-[70%] mt-10 bg-white"
           />
           <style>{`.jodit-wysiwyg{height:300px !important}`}</style> */}
-        </div>
+        {/* </div> */}
 
         {/* <div className="my-10 h-full w-[90vw]">
           Preview:
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div> */}
-        <div className="flex  flex-col pt-[60px] md:pt-0  flex-auto lg:flex-row w-full gap-[40px] items-center justify-center">
+        <div className="flex  ipad-pro:h-[600px] flex-col pt-[60px] md:pt-0  flex-auto lg:flex-row w-full gap-[40px] items-center justify-center">
           <div className="flex md:max-w-[700px] flex-col gap-[30px]">
             <Text
               variant="heading"
@@ -109,6 +109,7 @@ const AboutUs = () => {
               <span className=" text-primary">Bright Smile</span> Dental Clinic
             </Text>
             <Text variant="body" className=" leading-5 font-light">
+              {aboutUs}
               {aboutUs}
               {aboutUs}
             </Text>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Suspense } from "react";
 
+
 import { Skeleton } from "@/components/ui/skeleton";
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";

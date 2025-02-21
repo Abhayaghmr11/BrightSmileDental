@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { FaArrowRight } from "react-icons/fa6";
 
 import Text from "@/components/atom/Text";
-import Hero from "@/public/assets/images/Dental.svg";
+import Hero from "@/public/assets/images/DentalImage.svg";
 import { service } from "@/app/interface/types";
 
 const ServiceCard = ({ service }: { service: service }) => {
