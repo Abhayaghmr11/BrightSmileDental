@@ -21,17 +21,23 @@ const ServiceCard = ({ service }: { service: service }) => {
           priority
           width={400}
           height={225}
-          className="object-cover w-[400px] h-[225] overflow-hidden rounded-[10px]  "
+          className="object-cover w-[400px] h-[225px] overflow-hidden rounded-[10px]  "
           alt="Services"
         />
       </div>
 
       <div className="flex flex-col gap-[10px] px-[10px]">
         <div className="flex flex-row justify-between gap-[3px] w-full flex-grow">
-          <Text variant="card_heading" className="text-black h-[45px] line-clamp-2">
+          <Text
+            variant="card_heading"
+            className="text-black h-[45px] line-clamp-2"
+          >
             {service?.service}
           </Text>
-          <Text variant="span" className="text-primary font-normal min-w-[70px] ">
+          <Text
+            variant="span"
+            className="text-primary font-normal min-w-[70px] "
+          >
             RS. {service?.price}
           </Text>
         </div>
