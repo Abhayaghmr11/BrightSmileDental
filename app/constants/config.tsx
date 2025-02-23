@@ -11,6 +11,25 @@ export const address = "Nagpokhari Marg, Nepal";
 
 let serviceCounter = 111111;
 
+export const whyChooseUs = [
+  {
+    "id": 1,
+    "title": "Expert Dental Care",
+    "desc": "Our experienced dentists use the latest techniques to ensure high-quality treatments for all your dental needs."
+  },
+  {
+    "id": 2,
+    "title": "Comfort & Convenience",
+    "desc": "We provide a relaxing environment with flexible appointment scheduling to make your visit stress-free."
+  },
+  {
+    "id": 3,
+    "title": "Advanced Technology",
+    "desc": "Our clinic is equipped with state-of-the-art technology to deliver precise and efficient dental care."
+  }
+]
+
+
 import Hero from "@/public/assets/images/Dental.svg";
 
 export const ServiceData = [
@@ -1279,38 +1298,37 @@ export const Team = [
   },
   {
     id: 10,
-    name: "Reshma Shakya",
-    designation: "Accountant/Receptionist",
-    description:
-      "Reshma Shakya is an accountant/receptionist, managing financial records and administrative tasks for smooth office operations.",
-  },
-  {
-    id: 11,
     name: "Jitendra Kumar",
     designation: "Dental Hygienist",
     description:
       "Jitendra Kumar specializes in maintaining oral health, providing preventive care, and educating patients on oral hygiene practices.",
   },
   {
-    id: 12,
+    id: 11,
     name: "Binita Dulal",
     designation: "Dental Hygienist",
     description:
       "Binita Dulal specializes in preventive dental care, helping patients maintain optimal oral hygiene through cleaning and education.",
   },
   {
-    id: 13,
+    id: 12,
     name: "Parbati Gurung",
     designation: "Dental Hygienist",
     description:
       "Parbati Gurung provides professional teeth cleaning and educates patients on maintaining good oral health.",
   },
   {
-    id: 14,
+    id: 13,
     name: "Justin Shrestha",
     designation: "Dental Hygienist",
     description:
       "Justin Shrestha focuses on oral health by providing teeth cleaning and preventive care treatments to patients.",
+  },{
+    id: 14,
+    name: "Reshma Shakya",
+    designation: "Accountant/Receptionist",
+    description:
+      "Reshma Shakya is an accountant/receptionist, managing financial records and administrative tasks for smooth office operations.",
   },
 ];
 
