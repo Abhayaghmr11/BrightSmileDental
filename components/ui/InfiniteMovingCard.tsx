@@ -88,7 +88,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="w-[350px]  bg-white shadow-md max-w-full relative rounded-2xl  flex-shrink-0  px-[40px] pb-[20px] md:w-[450px]"
+            className="w-[350px] list-none  bg-white shadow-md max-w-full relative rounded-2xl  flex-shrink-0  px-[40px] pb-[20px] md:w-[450px]"
             key={item.name}
           >
             <BiSolidQuoteAltLeft className=" absolute top-[20px] left-[20px] text-primary w-[40px] h-[40px]" />
