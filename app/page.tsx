@@ -5,17 +5,20 @@ import Teams from "@/components/organism/landing/Teams";
 import Banner from "@/components/organism/Banner";
 import ContactUs from "@/components/organism/landing/ContactUs";
 import GoogleMapsContainer from "@/components/organism/landing/GoogleMaps";
+import React, { Suspense } from "react";
 
 export default function Home() {
   return (
     <main>
-      <HeroLanding />
-      <Testimonials />
-      <Services />
-      <Teams />
-      <Banner />
-      <ContactUs />
-      <GoogleMapsContainer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <HeroLanding />
+        <Testimonials />
+        <Services />
+        <Teams />
+        <Banner />
+        <ContactUs />
+        <GoogleMapsContainer />
+      </Suspense>
     </main>
   );
 }
