@@ -1,25 +1,16 @@
-import { cva, type VariantProps } from "class-variance-authority";
-import { CheckIcon, ChevronDown, XCircle, XIcon } from "lucide-react";
 import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { CheckIcon, XCircle, ChevronDown, XIcon } from "lucide-react";
 
-import { Badge } from "@/components/ui/badge";
+import { cn } from "@/lib/utils";
+import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-  CommandSeparator,
-} from "@/components/ui/command";
+import { Badge } from "@/components/ui/badge";
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import { Separator } from "@/components/ui/separator";
-import { cn } from "@/lib/utils";
 
 /**
  * Variants for the multi-select component to handle different styles.
@@ -125,7 +116,7 @@ export const MultiSelect = React.forwardRef<
       animation = 0,
       maxCount = 3,
       modalPopover = false,
-      //   eslint-disable-next-line @typescript-eslint/no-unused-vars
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       asChild = false,
       className,
       ...props
@@ -135,6 +126,7 @@ export const MultiSelect = React.forwardRef<
     const [selectedValues, setSelectedValues] =
       React.useState<string[]>(defaultValue);
     const [isPopoverOpen, setIsPopoverOpen] = React.useState(false);
+    const [searchQuery, setSearchQuery] = React.useState("");
 
     const handleInputKeyDown = (
       event: React.KeyboardEvent<HTMLInputElement>
@@ -147,6 +139,10 @@ export const MultiSelect = React.forwardRef<
         setSelectedValues(newSelectedValues);
         onValueChange(newSelectedValues);
       }
+    };
+
+    const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      setSearchQuery(event.target.value);
     };
 
     const toggleOption = (option: string) => {
@@ -181,6 +177,10 @@ export const MultiSelect = React.forwardRef<
         onValueChange(allValues);
       }
     };
+
+    const filteredOptions = options.filter((option) =>
+      option.label.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     return (
       <Popover
@@ -227,7 +227,7 @@ export const MultiSelect = React.forwardRef<
                   {selectedValues.length > maxCount && (
                     <Badge
                       className={cn(
-                        "bg-primary text-white border-foreground/1 ",
+                        "bg-transparent text-foreground border-foreground/1 hover:bg-transparent",
                         multiSelectVariants({ variant })
                       )}
                       style={{ animationDuration: `${animation}s` }}
@@ -260,7 +260,7 @@ export const MultiSelect = React.forwardRef<
               </div>
             ) : (
               <div className="flex items-center justify-between w-full mx-auto">
-                <span className="text-sm text-secondary_foreground mx-3">
+                <span className="text-sm text-muted-foreground mx-3">
                   {placeholder}
                 </span>
                 <ChevronDown className="h-4 cursor-pointer text-muted-foreground mx-2" />
@@ -269,46 +269,48 @@ export const MultiSelect = React.forwardRef<
           </Button>
         </PopoverTrigger>
         <PopoverContent
-          className="w-auto p-0"
+          className="w-full p-0"
           align="start"
           onEscapeKeyDown={() => setIsPopoverOpen(false)}
         >
-          <Command>
-            <CommandInput
+          <div className="p-2">
+            <input
+              type="text"
               placeholder="Search..."
+              className="w-full p-2 border rounded-md"
               onKeyDown={handleInputKeyDown}
+              onChange={handleSearchChange}
+              value={searchQuery}
             />
-            <CommandList>
-              <CommandEmpty>No results found.</CommandEmpty>
-              <CommandGroup>
-                <CommandItem
-                  key="all"
-                  onSelect={toggleAll}
-                  className="cursor-pointer"
+            <div className="mt-2 h-64 overflow-y-scroll">
+              <div
+                className="cursor-pointer w-full flex ga-2 p-2 hover:bg-gray-100"
+                onClick={toggleAll}
+              >
+                <div
+                  className={cn(
+                    "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
+                    selectedValues.length === options.length
+                      ? "bg-primary text-primary-foreground"
+                      : "opacity-50 [&_svg]:invisible"
+                  )}
                 >
-                  <div
-                    className={cn(
-                      "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
-                      selectedValues.length === options.length
-                        ? "bg-primary text-primary-foreground"
-                        : "opacity-50 [&_svg]:invisible"
-                    )}
-                  >
-                    <CheckIcon className="h-4 w-4" />
-                  </div>
-                  <span>(Select All)</span>
-                </CommandItem>
-                {options.map((option) => {
+                  <CheckIcon className="h-4 w-4" />
+                </div>
+                <span>(Select All)</span>
+              </div>
+              {filteredOptions.length > 0 ? (
+                filteredOptions.map((option) => {
                   const isSelected = selectedValues.includes(option.value);
                   return (
-                    <CommandItem
+                    <div
                       key={option.value}
-                      onSelect={() => toggleOption(option.value)}
-                      className="cursor-pointer"
+                      className="cursor-pointer w-full flex gap-2 items-center p-2 hover:bg-gray-100"
+                      onClick={() => toggleOption(option.value)}
                     >
                       <div
                         className={cn(
-                          "mr-2 flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
+                          " flex h-4 w-4 items-center justify-center rounded-sm border border-primary",
                           isSelected
                             ? "bg-primary text-primary-foreground"
                             : "opacity-50 [&_svg]:invisible"
@@ -317,40 +319,40 @@ export const MultiSelect = React.forwardRef<
                         <CheckIcon className="h-4 w-4" />
                       </div>
                       {option.icon && (
-                        <option.icon className="mr-2 h-4 w-4 text-muted-foreground" />
+                        <option.icon className=" h-4 w-4 text-muted-foreground" />
                       )}
                       <span>{option.label}</span>
-                    </CommandItem>
+                    </div>
                   );
-                })}
-              </CommandGroup>
-              <CommandSeparator />
-              <CommandGroup>
-                <div className="flex items-center justify-between">
-                  {selectedValues.length > 0 && (
-                    <>
-                      <CommandItem
-                        onSelect={handleClear}
-                        className="flex-1 justify-center cursor-pointer"
-                      >
-                        Clear
-                      </CommandItem>
-                      <Separator
-                        orientation="vertical"
-                        className="flex min-h-6 h-full"
-                      />
-                    </>
-                  )}
-                  <CommandItem
-                    onSelect={() => setIsPopoverOpen(false)}
-                    className="flex-1 justify-center cursor-pointer max-w-full"
+                })
+              ) : (
+                <p className=" w-72">No Data</p>
+              )}
+            </div>
+            <Separator className="my-2" />
+            <div className="flex items-center justify-between">
+              {selectedValues.length > 0 && (
+                <>
+                  <div
+                    className="flex-1 justify-center cursor-pointer p-2 hover:bg-gray-100"
+                    onClick={handleClear}
                   >
-                    Close
-                  </CommandItem>
-                </div>
-              </CommandGroup>
-            </CommandList>
-          </Command>
+                    Clear
+                  </div>
+                  <Separator
+                    orientation="vertical"
+                    className="flex min-h-6 h-full"
+                  />
+                </>
+              )}
+              <div
+                className="flex-1 justify-center cursor-pointer p-2 hover:bg-gray-100"
+                onClick={() => setIsPopoverOpen(false)}
+              >
+                Close
+              </div>
+            </div>
+          </div>
         </PopoverContent>
       </Popover>
     );
