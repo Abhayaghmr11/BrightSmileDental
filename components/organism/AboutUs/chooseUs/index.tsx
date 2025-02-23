@@ -1,6 +1,5 @@
 import ContainerWrapper from '@/components/Layout/ContainerWrapper'
 import MaxWidthWrapper from '@/components/Layout/MaxWidthWrapper'
-import WhyChooseUs from '@/components/molecule/Cards/WhyChooseUs'
 import React from 'react'
 
 import { whyChooseUs } from '@/app/constants/config'
