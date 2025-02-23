@@ -34,3 +34,7 @@ ol {
   list-style-type: decimal;
   padding-left: 20px;
 }
+
+[data-radix-focus-guard] {
+  z-index: 9999; /* Set the desired z-index */
+}

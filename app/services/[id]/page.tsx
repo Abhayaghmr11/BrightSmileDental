@@ -60,7 +60,7 @@ const ServiceDetailPage = async ({
             </div>
 
             <div className=" flex gap-[20px] flex-wrap">
-              <Link href="/contact">
+              <Link href={`/contact?service=${id}`}>
                 <Button variant="default">Book An Appointment</Button>{" "}
               </Link>
               <Link href="/services">

@@ -8,7 +8,7 @@ import NavLinks from "./NavLinks";
 
 const Navbar = () => {
   return (
-    <div className=" sticky bg-white top-0 z-[100] shadow">
+    <div className=" sticky bg-white top-0 z-[50] shadow">
       <MaxWidthWrapper>
         <div className="flex justify-between items-center py-[10px] ">
           <Link href={"/"}>
