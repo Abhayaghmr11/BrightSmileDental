@@ -4,7 +4,12 @@ import Image from "next/image";
 
 import { CiFacebook, CiInstagram, CiLinkedin } from "react-icons/ci";
 
-import { companyEmail, companyMoto, phoneNumber } from "@/app/constants/config";
+import {
+  companyEmail,
+  companyMoto,
+  phoneNumber,
+  ServiceData,
+} from "@/app/constants/config";
 import { navitems } from "../Navbar/config";
 
 import MaxWidthWrapper from "../MaxWidthWrapper";
@@ -62,24 +67,12 @@ const Footer = () => {
     },
   ];
 
-  const serviceLink: link[] = [
-    {
-      name: "RCT",
-      path: "/rct",
-    },
-    {
-      name: "Teeth Cleaning",
-      path: "/teethCleaning",
-    },
-    {
-      name: "Gums",
-      path: "/gums",
-    },
-    {
-      name: "Braces",
-      path: "/braces",
-    },
-  ];
+  const serviceLink: link[] = ServiceData.flatMap((category) =>
+    category.section.map((service) => ({
+      name: service.service,
+      path: `/services/${service.id}`,
+    }))
+  ).slice(0, 4);
 
   return (
     <div className=" bg-primary text-white">
@@ -89,14 +82,14 @@ const Footer = () => {
             {/* Company Detail */}
             <div className=" flex items-center w-full lg:items-start lg:w-min text-center lg:text-start flex-col gap-[30px]">
               <Image src={FooterLogo} alt="Bright Smile Dental" className="" />
-              <Text variant="nav" className=" max-w-[265px]">
+              <Text variant="nav" className=" hover:text-white max-w-[265px]">
                 {companyMoto}
               </Text>
               <div className=" flex  flex-col gap-[10px]">
-                <Text variant="nav" className="font-bold">
+                <Text variant="nav" className="font-bold hover:text-white">
                   {phoneNumber}
                 </Text>
-                <Text variant="nav" className=" font-bold">
+                <Text variant="nav" className=" font-bold hover:text-white">
                   {companyEmail}
                 </Text>
               </div>
