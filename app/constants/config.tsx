@@ -43,7 +43,7 @@ export const ServiceData = [
         sub_desc:
           "A basic dental extraction procedure for teeth that are easy to remove with minimal complexity.",
         details: `<p>A straightforward dental extraction procedure designed for teeth that are fully erupted, intact, and have simple root structures. This procedure is typically performed when a tooth is no longer viable due to decay, damage, or other dental concerns.</p><ul><li>Performed using basic extraction tools such as forceps and elevators.</li><li>Typically requires only local anesthesia, ensuring a quick and comfortable experience.</li><li>Minimal trauma to surrounding tissues, leading to faster healing and recovery.</li></ul><p>The procedure is quick and efficient, requiring minimal intervention, with most extractions completed in a short timeframe.</p><p>Healing time is generally fast, with initial recovery taking about 5-7 days and full healing occurring within 1-2 weeks.</p>`,
-        price: 300,
+        price: 4500,
       },
       {
         id: serviceCounter++,
@@ -51,7 +51,7 @@ export const ServiceData = [
         sub_desc:
           "A specialized extraction procedure for baby teeth that need removal due to decay, crowding, or delayed exfoliation.",
         details: `<p>A simple and gentle dental extraction procedure for primary (baby) teeth that need to be removed to facilitate proper dental development. This is typically done when a baby tooth does not fall out naturally, is severely decayed, or is causing misalignment.</p><ul><li>Performed using minimally invasive techniques to ensure comfort for young patients.</li><li>Usually requires only a small amount of local anesthesia, with sedation options available if needed.</li><li>Focuses on preserving the integrity of surrounding developing permanent teeth.</li></ul><p>The procedure is quick, ensuring minimal discomfort, and is tailored to the child's needs for a stress-free experience.</p><p>Healing is rapid, usually within 3-5 days, with complete gum closure in about a week.</p>`,
-        price: 200,
+        price: 1500,
       },
       {
         id: serviceCounter++,
@@ -59,7 +59,7 @@ export const ServiceData = [
         sub_desc:
           "A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal.",
         details: `<p>A more advanced dental extraction procedure necessary for teeth that present moderate complexity in their removal. This treatment addresses teeth that may be partially broken, have curved or multiple roots, or are situated in areas requiring additional surgical techniques. The procedure requires careful planning and execution to ensure complete removal while minimizing trauma to surrounding tissues. Special consideration is given to anatomical structures and potential complications that may arise during the extraction process.</p><ul><li>Requires slightly more invasive techniques including potential sectioning of the tooth and bone removal.</li><li>Performed under local anesthesia with the option of additional sedation for patient comfort.</li><li>May involve stitches for proper closure and optimal tissue healing.</li></ul><p>The procedure is well-managed with minimal risks, employing modern surgical techniques and equipment to ensure a successful outcome even in more challenging cases. Careful attention is paid to preserving surrounding bone and soft tissue.</p><p>Healing can take a little longer compared to simpler extractions, typically requiring 7-10 days for initial recovery with complete healing achieved within 2-3 weeks.</p>`,
-        price: 500,
+        price: 5500,
       },
       {
         id: serviceCounter++,
@@ -67,7 +67,7 @@ export const ServiceData = [
         sub_desc:
           "A specialized extraction procedure focused on removing fully erupted upper wisdom teeth that are accessible and visible in the mouth.",
         details: `<p>A specialized extraction procedure focused on removing fully erupted upper wisdom teeth that are accessible and visible in the mouth. This treatment is recommended when wisdom teeth are causing crowding, discomfort, or potential infection but are positioned favorably for straightforward removal. The procedure utilizes standard extraction techniques modified specifically for the unique location and characteristics of upper wisdom teeth, ensuring effective removal while maintaining patient comfort and safety throughout the process.</p><ul><li>Generally a straightforward procedure utilizing specific wisdom tooth extraction protocols.</li><li>Performed under local anesthesia with careful consideration of surrounding anatomical structures.</li><li>Minimal recovery time required due to less invasive nature of the procedure.</li></ul><p>The extraction process is designed to minimize trauma to surrounding tissues, resulting in faster healing and reduced post-operative discomfort. Careful attention is paid to preventing complications specific to upper wisdom tooth removal.</p><p>Post-operative care involves simple pain management and avoiding hard foods, with most patients returning to normal activities within 2-3 days following proper aftercare instructions.</p>`,
-        price: 500,
+        price: 7000,
       },
       {
         id: serviceCounter++,
@@ -75,7 +75,7 @@ export const ServiceData = [
         sub_desc:
           "An advanced surgical extraction procedure specifically designed for upper wisdom teeth that present significant complexity in their removal.",
         details: `<p>An advanced surgical extraction procedure specifically designed for upper wisdom teeth that present significant complexity in their removal. This treatment addresses teeth that may be partially impacted, positioned at difficult angles, or require specialized surgical techniques for access and removal. The procedure involves careful pre-operative planning and precise surgical execution to ensure safe and complete removal while protecting important anatomical structures in the upper jaw region.</p><ul><li>May involve surgical incision and creation of a tissue flap for proper access and visibility.</li><li>Performed under local anesthesia with sedation options available for complex cases.</li><li>Involves a more extensive healing process due to the surgical nature of the procedure.</li></ul><p>Complications are rare when proper surgical protocols are followed, but post-operative instructions are critical to avoid infections and ensure proper healing. Special attention is paid to maintaining sinus integrity during the procedure.</p><p>Recovery can take from several days to weeks depending on the complexity of the extraction, with careful monitoring and follow-up care to ensure optimal healing outcomes.</p>`,
-        price: 500,
+        price: 8500,
       },
       {
         id: serviceCounter++,
@@ -83,7 +83,7 @@ export const ServiceData = [
         sub_desc:
           "A comprehensive surgical procedure specifically designed for removing impacted lower wisdom teeth and other complicated dental extractions.",
         details: `<p>A comprehensive surgical procedure specifically designed for removing impacted lower wisdom teeth and other complicated dental extractions. This advanced treatment addresses teeth that are trapped beneath the gums, embedded in the jawbone, or positioned at challenging angles. The procedure requires extensive pre-operative planning, including detailed imaging studies, to ensure safe removal while protecting vital structures such as nerves and blood vessels. Special surgical techniques are employed to minimize trauma and optimize healing.</p><ul><li>Involves creating a precise surgical incision and careful bone removal when necessary.</li><li>Performed under local anesthesia or sedation, with general anesthesia available for complex cases.</li><li>Requires carefully placed stitches to promote proper healing and prevent complications.</li></ul><p>Post-surgery care is crucial to prevent complications and ensure optimal healing. A detailed aftercare plan is provided, including specific instructions for managing swelling and maintaining oral hygiene.</p><p>Healing time varies but usually extends over several weeks, with regular follow-up appointments to monitor progress and ensure proper recovery.</p>`,
-        price: 500,
+        price: 10000,
       },
       {
         id: serviceCounter++,
@@ -91,7 +91,7 @@ export const ServiceData = [
         sub_desc:
           "A strategically planned extraction procedure that forms an integral part of comprehensive orthodontic treatment.",
         details: `<p>A strategically planned extraction procedure that forms an integral part of comprehensive orthodontic treatment. This specialized service focuses on removing specific teeth to create optimal spacing for proper alignment and bite correction. The procedure is carefully coordinated with the overall orthodontic plan, taking into consideration factors such as crowding, bite relationship, and facial aesthetics. The timing and sequence of extractions are precisely planned to maximize the effectiveness of subsequent orthodontic treatment.</p><ul><li>Used for addressing severe crowding or alignment issues as part of a comprehensive treatment plan.</li><li>Performed under local anesthesia with emphasis on preserving surrounding tissues.</li><li>Helps to achieve optimal orthodontic results by creating necessary space for tooth movement.</li></ul><p>Recovery involves regular check-ups to ensure that healing is progressing as planned, with specific timing coordinated with orthodontic adjustments. The extraction sites are monitored to ensure proper bone healing and tissue response.</p><p>Long-term benefits include improved alignment, better bite function, and enhanced overall oral health, with results maintained through proper orthodontic retention.</p>`,
-        price: 500,
+        price: 3000,
       },
       {
         id: serviceCounter++,
@@ -100,7 +100,7 @@ export const ServiceData = [
         sub_desc:
           "A highly specialized surgical procedure that combines the removal of dental cysts with root-end surgery (apicoectomy).",
         details: `<p>A highly specialized surgical procedure that combines the removal of dental cysts with root-end surgery (apicoectomy). This advanced treatment addresses both the elimination of pathological cysts and the management of persistent root infections that haven't responded to conventional treatment. The procedure requires microscopic visualization and precise surgical techniques to access and treat the affected areas while preserving surrounding healthy tissue. Careful consideration is given to the anatomical structures and potential complications.</p><ul><li>Involves meticulous removal of cystic tissue and infected root apex under microscopic guidance.</li><li>Performed by a specialist using advanced surgical techniques and materials.</li><li>May include placement of specialized root-end filling material to prevent reinfection.</li></ul><p>The procedure can preserve the natural tooth and prevent further infection, offering a long-term solution for complex dental pathology. Success rates are high when performed by experienced specialists using modern techniques.</p><p>Aftercare is essential to reduce the risk of complications, with regular follow-up appointments to monitor healing progress over several weeks to months.</p>`,
-        price: 500,
+        price: 25000,
       },
     ],
   },
@@ -113,7 +113,7 @@ export const ServiceData = [
         sub_desc:
           "A specialized endodontic procedure designed to treat infected or damaged front teeth by removing compromised pulp tissue and nerve endings.",
         details: `<p>A specialized endodontic procedure designed to treat infected or damaged front teeth by removing compromised pulp tissue and nerve endings. This treatment addresses teeth that have become severely decayed, cracked, or traumatized, requiring intervention to save the natural tooth structure. The procedure utilizes precise techniques and advanced imaging to ensure complete cleaning and sealing of the root canal system while preserving the aesthetic appearance of the front teeth.</p><ul><li>Employs microscopic visualization and advanced rotary instruments for thorough cleaning of the canal system.</li><li>Performed under local anesthesia with careful consideration of the tooth's aesthetic importance.</li><li>Includes complete disinfection and sealing with biocompatible materials to prevent reinfection.</li></ul><p>The procedure typically achieves immediate pain relief and allows for preservation of the natural tooth structure, maintaining both function and appearance in the aesthetic zone.</p><p>Recovery is generally straightforward, with most patients returning to normal activities within 24-48 hours, though final restoration with a crown may be necessary for optimal long-term results.</p>`,
-        price: 500,
+        price: 15000,
       },
       {
         id: serviceCounter++,
@@ -121,7 +121,7 @@ export const ServiceData = [
         sub_desc:
           "An advanced endodontic procedure specifically designed for treating infected or damaged molars and premolars, which typically present with complex root canal systems.",
         details: `<p>An advanced endodontic procedure specifically designed for treating infected or damaged molars and premolars, which typically present with complex root canal systems. This treatment addresses teeth that have developed deep decay, cracks, or irreversible pulp damage, requiring skilled intervention to navigate the intricate anatomy of posterior teeth. The procedure employs specialized techniques and equipment to access and treat multiple canals while preserving the tooth's structural integrity.</p><ul><li>Utilizes advanced imaging technology to map complex root canal systems and identify additional canals.</li><li>Performed using specialized instruments designed for accessing and cleaning curved or branched canals.</li><li>Involves thorough disinfection and three-dimensional filling of all canal spaces to prevent reinfection.</li></ul><p>Success rates are high when proper techniques and materials are used, with most patients experiencing immediate relief from pain and infection symptoms.</p><p>Complete healing typically occurs within 1-2 weeks, with final restoration recommended to ensure long-term functionality and prevention of fracture.</p>`,
-        price: 500,
+        price: 15000,
       },
       {
         id: serviceCounter++,
@@ -129,7 +129,7 @@ export const ServiceData = [
         sub_desc:
           "A specialized retreatment procedure designed to address failed initial root canal treatments or recurring infections in previously treated teeth.",
         details: `<p>A specialized retreatment procedure designed to address failed initial root canal treatments or recurring infections in previously treated teeth. This complex intervention involves removing existing root canal materials, identifying missed anatomy or additional infection sources, and implementing enhanced cleaning and filling techniques. The procedure requires extensive expertise to navigate through previous materials while preserving the remaining tooth structure.</p><ul><li>Employs advanced removal techniques for existing root canal materials and posts if present.</li><li>Utilizes microscopic examination to identify fractures, missed canals, or other complications.</li><li>Implements enhanced disinfection protocols and specialized filling materials for optimal sealing.</li></ul><p>Success rates for retreatment are generally favorable when performed by experienced specialists, often saving teeth that might otherwise require extraction.</p><p>Recovery periods vary based on case complexity, typically ranging from 1-3 weeks with appropriate post-operative care and monitoring.</p>`,
-        price: 500,
+        price: 15000,
       },
       {
         id: serviceCounter++,
@@ -137,7 +137,7 @@ export const ServiceData = [
         sub_desc:
           "An efficient endodontic procedure that completes the entire root canal treatment for front teeth in one appointment.",
         details: `<p>An efficient endodontic procedure that completes the entire root canal treatment for front teeth in one appointment. This accelerated treatment utilizes advanced techniques and materials to achieve optimal results in a single session, making it ideal for patients with time constraints. The procedure maintains the same high standards of care while leveraging modern technology to expedite the process without compromising quality.</p><ul><li>Implements state-of-the-art rotary instruments and enhanced irrigation protocols for rapid but thorough cleaning.</li><li>Utilizes advanced obturation techniques for immediate and reliable canal sealing.</li><li>Incorporates real-time imaging to ensure complete treatment in a single visit.</li></ul><p>The streamlined approach provides immediate relief while maintaining the same high success rates as traditional multi-visit treatments.</p><p>Patients typically experience minimal post-operative discomfort with a recovery period of 24-48 hours before final restoration.</p>`,
-        price: 500,
+        price: 18000,
       },
       {
         id: serviceCounter++,
@@ -145,23 +145,23 @@ export const ServiceData = [
         sub_desc:
           "A comprehensive single-appointment root canal treatment specifically designed for back teeth, utilizing advanced techniques to complete complex molar treatments in one visit.",
         details: `<p>A comprehensive single-appointment root canal treatment specifically designed for back teeth, utilizing advanced techniques to complete complex molar treatments in one visit. This efficient procedure combines thorough cleaning and filling of multiple canals while maintaining the highest standards of care. The treatment employs specialized equipment and materials to ensure complete disinfection and sealing of the intricate root canal system.</p><ul><li>Uses advanced imaging and apex locators for precise length determination and canal identification.</li><li>Implements efficient cleaning protocols with enhanced irrigation systems for optimal disinfection.</li><li>Utilizes warm vertical condensation techniques for immediate and thorough canal filling.</li></ul><p>The procedure offers the convenience of single-visit treatment while maintaining the same high success rates as traditional multi-visit approaches.</p><p>Most patients return to normal activities within 48-72 hours, with final restoration typically scheduled within two weeks.</p>`,
-        price: 500,
+        price: 18000,
       },
       {
         id: serviceCounter++,
-        service: "Instrument Bi-Pass",
+        service: "Instruement Bi-Pass",
         sub_desc:
           "A specialized endodontic procedure designed to navigate around separated instruments within the root canal system without removal.",
         details: `<p>A specialized endodontic procedure designed to navigate around separated instruments within the root canal system without removal. This technically demanding treatment requires extensive expertise to create a pathway past the obstruction while maintaining the original canal anatomy. The procedure employs microscopic visualization and specialized techniques to ensure successful treatment completion despite the presence of the separated instrument.</p><ul><li>Utilizes high-magnification microscopes and ultrasonic instruments for precise navigation.</li><li>Implements careful techniques to preserve remaining tooth structure while creating bypass pathway.</li><li>Employs specialized filling techniques to ensure complete sealing around the bypassed instrument.</li></ul><p>Success rates depend on the location of the separated instrument and the remaining canal anatomy, with careful case selection being crucial.</p><p>Recovery typically follows standard root canal healing patterns, with regular monitoring to ensure successful bypass and treatment completion.</p>`,
-        price: 500,
+        price: 10000,
       },
       {
         id: serviceCounter++,
-        service: "Instrument Removal",
+        service: "Instruement Removal",
         sub_desc:
           "A highly specialized endodontic procedure focused on safely removing separated instruments from within the root canal system.",
         details: `<p>A highly specialized endodontic procedure focused on safely removing separated instruments from within the root canal system. This complex intervention requires advanced microscopic visualization and precise ultrasonic techniques to liberate and retrieve the separated instrument while preserving the surrounding tooth structure. The procedure demands extensive expertise and specialized equipment to ensure successful removal without compromising the tooth.</p><ul><li>Employs high-powered microscopes and specialized ultrasonic tips for precise instrument engagement.</li><li>Utilizes controlled vibration techniques to loosen and retrieve the separated instrument.</li><li>Implements careful staging procedures to prevent further complications during removal.</li></ul><p>Success rates vary based on instrument location and accessibility, with careful case assessment being essential for predictable outcomes.</p><p>Healing follows standard post-endodontic patterns once the instrument is successfully removed and treatment completed.</p>`,
-        price: 500,
+        price: 15000,
       },
       {
         id: serviceCounter++,
@@ -169,7 +169,7 @@ export const ServiceData = [
         sub_desc:
           "A precise dental procedure focused on safely removing existing crowns to facilitate endodontic treatment access.",
         details: `<p>A precise dental procedure focused on safely removing existing crowns to facilitate endodontic treatment access. This specialized service requires careful technique to preserve the crown when possible and protect the underlying tooth structure. The procedure employs specific instruments and methods to efficiently remove the crown while maintaining the integrity of the underlying tooth preparation and surrounding tissues.</p><ul><li>Utilizes specialized crown removal instruments and techniques to minimize damage to existing restorations.</li><li>Implements careful separation methods to preserve crown structure when possible for temporary replacement.</li><li>Employs protective measures to prevent damage to underlying tooth structure during removal.</li></ul><p>The procedure typically allows for immediate endodontic access while preserving the option to reuse the crown when appropriate.</p><p>Temporary protection is provided until endodontic treatment is completed and final restoration can be placed.</p>`,
-        price: 500,
+        price: 1500,
       },
       {
         id: serviceCounter++,
@@ -177,7 +177,7 @@ export const ServiceData = [
         sub_desc:
           "A vital pediatric endodontic procedure designed to treat severely infected or damaged primary teeth by removing the infected pulp tissue while preserving the tooth until natural exfoliation.",
         details: `<p>A vital pediatric endodontic procedure designed to treat severely infected or damaged primary teeth by removing the infected pulp tissue while preserving the tooth until natural exfoliation. This treatment aims to maintain the primary tooth's space-maintaining function and prevent premature loss that could affect permanent tooth eruption. The procedure uses specialized techniques and materials suitable for primary teeth anatomy.</p><ul><li>Employs gentle but thorough cleaning techniques appropriate for primary tooth anatomy.</li><li>Utilizes biocompatible materials that allow for normal root resorption patterns.</li><li>Implements careful length control to avoid damage to developing permanent teeth.</li></ul><p>The procedure typically provides immediate pain relief while maintaining the primary tooth's important developmental role.</p><p>Recovery is usually quick, with most children returning to normal activities within 24 hours of treatment.</p>`,
-        price: 500,
+        price: 8500,
       },
       {
         id: serviceCounter++,
@@ -185,10 +185,11 @@ export const ServiceData = [
         sub_desc:
           "A complex endodontic procedure specifically designed for treating infected or damaged wisdom teeth when extraction is not the preferred option.",
         details: `<p>A complex endodontic procedure specifically designed for treating infected or damaged wisdom teeth when extraction is not the preferred option. This challenging treatment addresses the unique anatomical considerations and limited access associated with third molars, requiring specialized techniques and instruments. The procedure aims to preserve the wisdom tooth while eliminating infection and preventing future complications.</p><ul><li>Utilizes modified access techniques to overcome restricted visibility and reach.</li><li>Employs specialized instruments designed for navigating complex third molar anatomy.</li><li>Implements advanced imaging to ensure complete treatment despite limited access.</li></ul><p>Success rates depend heavily on tooth position and accessibility, with careful case selection being crucial for predictable outcomes.</p><p>Recovery typically requires 1-2 weeks, with special attention to maintaining adequate cleaning in this difficult-to-reach area.</p>`,
-        price: 500,
+        price: 18000,
       },
     ],
   },
+  // Add remaining services here
   {
     category: "Periodontics",
     section: [
@@ -198,7 +199,7 @@ export const ServiceData = [
         sub_desc:
           "A targeted periodontal procedure designed to alleviate pain and swelling caused by an infection within the gum tissue.",
         details: `<p>A targeted periodontal procedure designed to alleviate pain and swelling caused by an infection within the gum tissue. This treatment involves making a small incision to drain accumulated pus, reducing pressure and discomfort. It is an essential intervention for preventing the spread of infection and preserving overall gum health.</p><ul><li>Employs precision techniques to ensure complete drainage and infection control.</li><li>Performed under local anesthesia for a painless experience.</li><li>May include antibiotic therapy to prevent recurrence and support healing.</li></ul><p>Immediate relief from pain and pressure is achieved, with noticeable improvement in gum condition shortly after treatment.</p><p>Proper post-procedure care, including oral hygiene and follow-up visits, ensures full recovery and minimizes the risk of reinfection.</p>`,
-        price: 500,
+        price: 3500,
       },
       {
         id: serviceCounter++,
@@ -206,7 +207,7 @@ export const ServiceData = [
         sub_desc:
           "An essential periodontal treatment designed to remove plaque and tartar buildup beneath the gumline, preventing the progression of gum disease.",
         details: `<p>An essential periodontal treatment designed to remove plaque and tartar buildup beneath the gumline, preventing the progression of gum disease. This initial stage of deep cleaning is particularly effective for early-stage periodontitis, improving gum health and reducing inflammation.</p><ul><li>Utilizes specialized instruments to remove calculus from deep periodontal pockets.</li><li>Performed under local anesthesia for enhanced comfort during the procedure.</li><li>Helps reduce gum bleeding, swelling, and sensitivity associated with early gum disease.</li></ul><p>The treatment promotes healthier gums by eliminating bacterial deposits that contribute to disease progression.</p><p>Post-procedure care includes proper oral hygiene and follow-up visits to maintain long-term periodontal health.</p>`,
-        price: 500,
+        price: 5500,
       },
       {
         id: serviceCounter++,
@@ -214,7 +215,7 @@ export const ServiceData = [
         sub_desc:
           "A more intensive scaling procedure aimed at addressing moderate gum disease by removing stubborn plaque and tartar buildup beneath the gumline.",
         details: `<p>A more intensive scaling procedure aimed at addressing moderate gum disease by removing stubborn plaque and tartar buildup beneath the gumline. This treatment focuses on reducing gum pockets and preventing further periodontal deterioration.</p><ul><li>Employs ultrasonic and hand instruments to remove deeper calculus deposits.</li><li>Performed under local anesthesia to ensure patient comfort during the process.</li><li>Effectively reduces inflammation and promotes reattachment of gum tissue.</li></ul><p>The procedure helps restore gum health and prevents the need for surgical intervention.</p><p>Proper aftercare, including antimicrobial rinses and routine check-ups, supports long-term success.</p>`,
-        price: 500,
+        price: 6500,
       },
       {
         id: serviceCounter++,
@@ -222,7 +223,7 @@ export const ServiceData = [
         sub_desc:
           "An advanced deep-cleaning procedure designed for severe gum disease or advanced periodontitis.",
         details: `<p>An advanced deep-cleaning procedure designed for severe gum disease or advanced periodontitis. This treatment is essential for halting disease progression by thoroughly removing bacterial deposits and promoting gum tissue healing.</p><ul><li>Utilizes specialized deep-cleaning instruments to access complex gum pockets.</li><li>Performed under local anesthesia to minimize discomfort during treatment.</li><li>Reduces inflammation, bleeding, and potential bone loss associated with periodontitis.</li></ul><p>This procedure significantly improves overall gum health and prevents further deterioration.</p><p>Consistent aftercare, including periodontal maintenance visits, is necessary to sustain long-term benefits.</p>`,
-        price: 500,
+        price: 8500,
       },
       {
         id: serviceCounter++,
@@ -230,7 +231,7 @@ export const ServiceData = [
         sub_desc:
           "A minor periodontal surgical procedure designed to provide better access to deep gum pockets for cleaning and infection control.",
         details: `<p>A minor periodontal surgical procedure designed to provide better access to deep gum pockets for cleaning and infection control. Grade I surgery involves minimal tissue manipulation, making it an effective early-stage intervention.</p><ul><li>Employs precise incisions to lift gum tissue for thorough cleaning.</li><li>Minimally invasive approach ensures faster healing and recovery.</li><li>Helps reduce gum pocket depth and promotes tissue reattachment.</li></ul><p>Post-operative care includes gentle brushing and prescribed rinses to support healing.</p><p>Regular dental visits are crucial for monitoring progress and maintaining periodontal health.</p>`,
-        price: 500,
+        price: 15000,
       },
       {
         id: serviceCounter++,
@@ -238,7 +239,7 @@ export const ServiceData = [
         sub_desc:
           "An advanced periodontal surgery designed for moderate gum disease, providing deeper cleaning and improved access to infected areas.",
         details: `<p>An advanced periodontal surgery designed for moderate gum disease, providing deeper cleaning and improved access to infected areas. This procedure involves lifting the gum tissue to remove plaque, tartar, and diseased tissue.</p><ul><li>Involves careful separation of the gum tissue to expose deep pockets.</li><li>Ensures thorough cleaning and promotes reattachment of healthy gum tissue.</li><li>Performed under local anesthesia to minimize discomfort.</li></ul><p>Recovery time varies, with most patients experiencing significant improvement within a few weeks.</p><p>Regular follow-ups and meticulous oral hygiene practices are essential for long-term success.</p>`,
-        price: 500,
+        price: 19500,
       },
       {
         id: serviceCounter++,
@@ -246,7 +247,7 @@ export const ServiceData = [
         sub_desc:
           "A periodontal surgical procedure that targets one quadrant of the mouth to remove deep-seated plaque and tartar deposits.",
         details: `<p>A periodontal surgical procedure that targets one quadrant of the mouth to remove deep-seated plaque and tartar deposits. This treatment is essential for preventing the progression of gum disease and preserving natural teeth.</p><ul><li>Employs precise surgical techniques to lift gum tissue and access infected areas.</li><li>Reduces gum pocket depth and enhances gum attachment.</li><li>Performed under local anesthesia for a comfortable experience.</li></ul><p>Healing occurs over a few weeks, with noticeable improvement in gum health.</p><p>Patients are advised to follow a strict oral hygiene routine to prevent reinfection.</p>`,
-        price: 500,
+        price: 21000,
       },
       {
         id: serviceCounter++,
@@ -254,8 +255,78 @@ export const ServiceData = [
         sub_desc:
           "An advanced surgical procedure for severe periodontal disease, performed on an entire quadrant of the mouth.",
         details: `<p>An advanced surgical procedure for severe periodontal disease, performed on an entire quadrant of the mouth. This treatment is essential for patients experiencing extensive gum pocket formation and bone loss.</p><ul><li>Involves lifting gum tissue for extensive cleaning and infection removal.</li><li>Promotes tissue regeneration and prevents further gum recession.</li><li>Employs specialized techniques to ensure minimal discomfort during recovery.</li></ul><p>Healing typically takes several weeks, with gradual improvements in gum stability.</p><p>Follow-up visits and proper home care are essential to maintain the long-term health benefits of the procedure.</p>`,
-        price: 500,
+        price: 25000,
       },
+      {
+        id: serviceCounter++,
+        service: "Crown Lengthening",
+        sub_desc: "A surgical procedure to expose more of the tooth's surface by reshaping the gum and bone tissue.",
+        details: `<p>A surgical procedure to expose more of the tooth's surface by reshaping the gum and bone tissue. This treatment is ideal for patients with excessive gum coverage or those requiring additional tooth structure for restorative work.</p><ul><li>Reshapes gum and bone tissue to expose more of the tooth's surface.</li><li>Improves the appearance of a "gummy smile" and prepares the tooth for crowns or bridges.</li><li>Performed under local anesthesia for a comfortable experience.</li></ul><p>Recovery typically takes 1-2 weeks, with mild swelling and discomfort managed by prescribed medications.</p><p>Follow-up visits are essential to monitor healing and ensure optimal results.</p>`,
+        price: 5500
+      },
+      {
+        id: serviceCounter++,
+        service: "Crown Lengthening with bone trimming (Grade I)",
+        sub_desc: "A surgical procedure to expose more of the tooth's surface with minor bone reshaping.",
+        details: `<p>A surgical procedure to expose more of the tooth's surface with minor bone reshaping. This treatment is suitable for patients requiring minimal bone adjustment to achieve the desired tooth exposure.</p><ul><li>Involves reshaping the gum tissue and minor bone trimming to expose the tooth.</li><li>Enhances the tooth's appearance and prepares it for restorative procedures.</li><li>Performed with precision to ensure minimal discomfort and quick recovery.</li></ul><p>Healing typically takes 1-2 weeks, with patients advised to avoid hard foods during recovery.</p><p>Regular follow-ups are necessary to ensure proper healing and long-term success.</p>`,
+        price: 11000
+      },
+      {
+        id: serviceCounter++,
+        service: "Crown Lengthening with bone trimming (Grade II)",
+        sub_desc: "A surgical procedure to expose more of the tooth's surface with moderate bone reshaping.",
+        details: `<p>A surgical procedure to expose more of the tooth's surface with moderate bone reshaping. This treatment is ideal for patients requiring significant bone adjustment to achieve proper tooth exposure.</p><ul><li>Reshapes gum tissue and moderately trims bone to expose the tooth structure.</li><li>Improves both function and aesthetics for teeth requiring crowns or bridges.</li><li>Uses advanced techniques to minimize discomfort and promote faster healing.</li></ul><p>Recovery takes 2-3 weeks, with patients advised to follow a soft diet during this period.</p><p>Follow-up visits are crucial to monitor progress and ensure optimal results.</p>`,
+        price: 12100
+      },
+      {
+        id: serviceCounter++,
+        service: "Crown Lengthening with bone trimming (Grade III)",
+        sub_desc: "A surgical procedure to expose more of the tooth's surface with extensive bone reshaping.",
+        details: `<p>A surgical procedure to expose more of the tooth's surface with extensive bone reshaping. This treatment is designed for patients with severe gum and bone overgrowth requiring significant correction.</p><ul><li>Involves extensive reshaping of gum and bone tissue to expose the tooth.</li><li>Prepares the tooth for complex restorative procedures like crowns or bridges.</li><li>Uses advanced surgical techniques to ensure precision and patient comfort.</li></ul><p>Healing may take 3-4 weeks, with patients advised to avoid strenuous activities during recovery.</p><p>Regular follow-ups and proper oral care are essential to maintain the results and prevent complications.</p>`,
+        price: 15400
+      },
+      {
+        id: serviceCounter++,
+        service: "Gingivectomy per tooth",
+        sub_desc: "A surgical procedure to remove diseased gum tissue and reshape the gums around a tooth.",
+        details: `<p>A surgical procedure to remove diseased gum tissue and reshape the gums around a tooth. This treatment is ideal for patients with gum overgrowth or localized periodontal issues.</p><ul><li>Removes infected or overgrown gum tissue to restore a healthy gum line.</li><li>Improves oral hygiene by eliminating hard-to-reach areas where bacteria accumulate.</li><li>Performed under local anesthesia for a pain-free experience.</li></ul><p>Recovery typically takes 1-2 weeks, with minimal discomfort and swelling.</p><p>Regular follow-ups and proper oral care are essential to maintain the results and prevent recurrence.</p>`,
+        price: 4600
+      },
+      {
+        id: serviceCounter++,
+        service: "Depigmentation per sextant",
+        sub_desc: "A cosmetic procedure to remove dark spots or patches on the gums for a more uniform appearance.",
+        details: `<p>A cosmetic procedure to remove dark spots or patches on the gums for a more uniform appearance. This treatment is perfect for individuals seeking to enhance their smile aesthetics.</p><ul><li>Uses advanced laser technology to gently remove pigmented gum tissue.</li><li>Provides immediate results with minimal discomfort and no scarring.</li><li>Enhances smile aesthetics by creating a balanced gum color.</li></ul><p>Healing is quick, with most patients resuming normal activities within a few days.</p><p>Maintaining good oral hygiene and avoiding tobacco products can prolong the results.</p>`,
+        price: 22000
+      },
+      {
+        id: serviceCounter++,
+        service: "Soft Tissue Graft (Root Coverage)",
+        sub_desc: "A procedure to cover exposed tooth roots and protect them from further damage.",
+        details: `<p>A procedure to cover exposed tooth roots and protect them from further damage. This treatment is ideal for patients with receding gums or tooth sensitivity.</p><ul><li>Uses healthy gum tissue from the palate or a donor source to cover exposed roots.</li><li>Reduces tooth sensitivity and improves gum aesthetics.</li><li>Prevents further gum recession and bone loss.</li></ul><p>Recovery takes 1-2 weeks, with mild discomfort managed by prescribed medications.</p><p>Regular dental check-ups and proper brushing techniques are crucial for long-term success.</p>`,
+        price: 24200
+      },
+      {
+        id: serviceCounter++,
+        service: "Splinting (Simple)",
+        sub_desc: "A procedure to stabilize loose teeth by bonding them together for added support.",
+        details: `<p>A procedure to stabilize loose teeth by bonding them together for added support. This treatment is ideal for patients with mild to moderate tooth mobility.</p><ul><li>Uses composite resin or wire to bond loose teeth to adjacent stable teeth.</li><li>Improves chewing function and prevents further tooth movement.</li><li>Non-invasive and completed in a single visit.</li></ul><p>Patients can resume normal activities immediately after the procedure.</p><p>Regular dental visits are necessary to monitor the stability of the splinted teeth.</p>`,
+        price: 7700
+      },
+      {
+        id: serviceCounter++,
+        service: "Splinting (Advanced)",
+        sub_desc: "A procedure to stabilize multiple loose teeth using advanced techniques for long-term support.",
+        details: `<p>A procedure to stabilize multiple loose teeth using advanced techniques for long-term support. This treatment is suitable for patients with moderate to severe tooth mobility.</p><ul><li>Uses specialized materials like fiber-reinforced composites for durable bonding.</li><li>Distributes biting forces evenly across the splinted teeth.</li><li>Provides long-term stability and prevents tooth loss.</li></ul><p>Recovery is quick, with minimal discomfort and no dietary restrictions.</p><p>Follow-up visits are essential to ensure the splint remains intact and functional.</p>`,
+        price: 11000
+      },
+      {
+        id: serviceCounter++,
+        service: "Splinting (Complex)",
+        sub_desc: "A comprehensive procedure to stabilize severely loose teeth and restore dental function.",
+        details: `<p>A comprehensive procedure to stabilize severely loose teeth and restore dental function. This treatment is designed for patients with advanced periodontal disease or trauma.</p><ul><li>Combines splinting with other periodontal treatments for optimal results.</li><li>Uses custom-made splints to provide maximum support and stability.</li><li>Restores chewing function and improves overall oral health.</li></ul><p>Healing may take several weeks, depending on the severity of the condition.</p><p>Regular maintenance and professional cleanings are crucial to preserve the results.</p>`,
+        price: 16500
+      }
     ],
   },
   {
@@ -274,7 +345,7 @@ export const ServiceData = [
           </ul>
           <p>After full integration, a custom-made crown is attached, completing the restoration and providing a durable replacement. This offers a natural appearance and restores chewing function, improving the overall quality of life for the patient.</p>
           <p>Maintaining good oral hygiene, including brushing, flossing, and regular dental visits, is essential to ensure the longevity of implants. Proper care prevents plaque build-up and reduces the risk of infection, helping to prolong the life of the implant and ensure a healthy smile.</p>`,
-        price: 500,
+        price: 110000,
       },
       {
         id: serviceCounter++,
@@ -289,7 +360,7 @@ export const ServiceData = [
           </ul>
           <p>Regular use, particularly at night, is essential to maintain orthodontic results and prevent relapse. The retainer should be worn as directed by the orthodontist to ensure the teeth remain in their ideal positions over time.</p>
           <p>Cleaning the retainer daily with mild soap and water helps maintain hygiene and extend its lifespan. A well-maintained retainer also reduces the risk of plaque and bacteria buildup, ensuring that oral health is preserved while the retainer is in use.</p>`,
-        price: 500,
+        price: 6000,
       },
       {
         id: serviceCounter++,
@@ -304,7 +375,7 @@ export const ServiceData = [
           </ul>
           <p>Patients should maintain good oral hygiene by brushing, flossing, and using antimicrobial mouthwash daily. This helps reduce the risk of infection and promotes healthy gums around the implant.</p>
           <p>Avoiding excessive force on the implant, such as chewing hard foods, helps prevent damage and prolongs its lifespan. Patients should follow all aftercare recommendations to ensure the best possible outcome and extend the durability of the implant.</p>`,
-        price: 500,
+        price: 5000,
       },
       {
         id: serviceCounter++,
@@ -319,7 +390,7 @@ export const ServiceData = [
           </ul>
           <p>Recovery time is longer compared to standard implant procedures, requiring several months for proper bone development. The bone graft takes time to fuse with the existing bone and create a solid foundation for future implant placement.</p>
           <p>Following post-operative care instructions, such as avoiding strenuous activities and maintaining oral hygiene, is essential for successful healing. Regular follow-ups are needed to ensure proper bone growth and implant readiness.</p>`,
-        price: 500,
+        price: 75000,
       },
     ],
   },
@@ -339,7 +410,7 @@ export const ServiceData = [
         </ul>
         <p>Duration of treatment varies, typically lasting between 18 months to 3 years, depending on the complexity of the dental issues being addressed. Regular visits to the orthodontist are crucial for monitoring progress and making necessary adjustments to ensure the best outcome.</p>
         <p>After the braces are removed, a retainer is often required to maintain the teeth's new position, preventing any shifting.</p>`,
-        price: 500,
+        price: 75000,
       },
       {
         id: serviceCounter++,
@@ -354,7 +425,7 @@ export const ServiceData = [
         </ul>
         <p>Requires regular monitoring, as aligners need to be updated periodically to ensure continued progress. Each set of aligners is typically worn for about 2 weeks before being replaced with the next stage of aligners in the treatment plan.</p>
         <p>While aligners are discreet and convenient, they must be worn for the recommended 20-22 hours per day for optimal results.</p>`,
-        price: 500,
+        price: 175000,
       },
       {
         id: serviceCounter++,
@@ -369,7 +440,7 @@ export const ServiceData = [
         </ul>
         <p>Long-term use is recommended for the best results, as teeth can shift over time if retention is not maintained. Regular follow-up appointments are important to ensure that the retainer fits properly and continues to preserve alignment.</p>
         <p>Maintaining the retainer's hygiene is also crucial for ensuring its longevity and effectiveness. Regular cleaning with mild soap and water can help keep it in good condition.</p>`,
-        price: 500,
+        price: 7000,
       },
       {
         id: serviceCounter++,
@@ -384,7 +455,7 @@ export const ServiceData = [
         </ul>
         <p>Ideal for use after braces removal, the Hawley appliance provides ongoing retention while being more comfortable and less conspicuous than some other retention methods.</p>
         <p>Regular follow-up visits are necessary to ensure that the appliance continues to fit properly and to monitor the stability of the teeth.</p>`,
-        price: 500,
+        price: 7000,
       },
     ],
   },
@@ -608,6 +679,14 @@ export const ServiceData = [
         sub_desc:
           "The Deprogrammer Double Layer is an enhanced version of the standard Deprogrammer, offering additional comfort and effectiveness for patients with more severe jaw issues or bruxism.",
       },
+      {
+        id: serviceCounter++,
+        service: "Sinus Lift (Including Bone Graft and Membrane)",
+        details:
+          `<p>Sinus Lift is a surgical procedure that enhances the upper jawbone to prepare it for dental implants. This treatment is necessary when there is insufficient bone height in the upper molar region due to bone loss or anatomical limitations. By lifting the sinus membrane and placing a bone graft, this procedure creates a strong foundation for implant placement.</p><ul><li>Increases bone height for dental implants</li><li>Uses bone grafting for added support</li><li>Improves long-term implant success</li></ul><p>The procedure involves making a small incision in the gum, gently lifting the sinus membrane, and placing a bone graft material to encourage new bone growth. Over time, this newly generated bone provides a stable base for implant placement. Sinus Lift is a crucial step for patients with significant bone loss who wish to receive dental implants. With proper healing, this procedure ensures a solid foundation, increasing the success rate and longevity of dental implants.</p>`,
+        price: 75000,
+        sub_desc: "Sinus Lift is a surgical procedure that enhances the upper jawbone to prepare it for dental implants."
+      }
     ],
   },
   {
@@ -729,6 +808,51 @@ export const ServiceData = [
         details:
           "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
         price: 3500,
+        sub_desc:
+          "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
+      },
+      {
+        id: serviceCounter++,
+        service: "Composite Core Build Up",
+        details:
+          "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
+        price: 5000,
+        sub_desc:
+          "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
+      },
+      {
+        id: serviceCounter++,
+        service: "Composite Laminate / Vaneeer Per Tooth",
+        details:
+          "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
+        price: 10000,
+        sub_desc:
+          "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
+      },
+      {
+        id: serviceCounter++,
+        service: "GIC Filling",
+        details:
+          "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
+        price: 2000,
+        sub_desc:
+          "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
+      },
+      {
+        id: serviceCounter++,
+        service: "Diastema Closure per Tooth",
+        details:
+          "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
+        price: 5500,
+        sub_desc:
+          "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
+      },
+      {
+        id: serviceCounter++,
+        service: "Post and Core",
+        details:
+          "<p>Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities. This type of filling is ideal for patients who have extensive decay that needs restoration while maintaining the natural aesthetics of their teeth. The composite material used in this procedure is designed to closely mimic the natural color of your teeth, ensuring that the restoration looks seamless and blends with your natural tooth structure. The application process involves cleaning the cavity, filling it with the composite material, and curing it under a special light to ensure it bonds securely to the tooth.</p><ul><li>Long-lasting and effective</li><li>Blends well with natural tooth color</li><li>Prevents further decay</li></ul><p>Grade III composite fillings provide a durable and reliable solution for larger cavities, offering both strength and beauty. This service is perfect for patients who need to restore larger areas of tooth structure while preserving the overall appearance of their smile. Additionally, composite fillings help prevent further tooth decay by sealing off the cavity from external factors. With proper care, these fillings can last many years, ensuring that your tooth remains functional and aesthetically pleasing. Composite Filling Grade III is a top choice for patients seeking a reliable, long-term solution for larger cavities.</p>",
+        price: 8000,
         sub_desc:
           "Composite Filling Grade III is a highly effective and long-lasting dental solution for larger cavities.",
       },
