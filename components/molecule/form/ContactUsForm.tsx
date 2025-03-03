@@ -1,17 +1,41 @@
 "use client";
 import React from "react";
+import { useSearchParams } from "next/navigation";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Input from "@/components/atom/Input";
 import Text from "@/components/atom/Text";
 import Button from "@/components/atom/Button";
 
+import { MultiSelect } from "../MulitSelect";
+
+import { ServiceData } from "@/app/constants/config";
+
 const ContactUsForm = () => {
+  const searchParams = useSearchParams();
+
+  // Extract services from URL params (assuming it's a comma-separated list)
+  const defaultServices = searchParams.get("service")?.split(",") || [];
+
+  const serviceList = ServiceData?.flatMap((item) => item?.section);
+
+  const serviceOptions = serviceList?.map((item) => {
+    return {
+      value: item?.id?.toString(),
+      label: item?.service,
+      price: item?.price,
+    };
+  });
+
+  const defaultSelectedServices = serviceOptions.filter((option) =>
+    defaultServices.includes(option.value)
+  );
+
   const contactUsSchema = useFormik({
     initialValues: {
       name: "",
       email: "",
-      service: "",
+      service: defaultServices,
       message: "",
       address: "",
       number: "",
@@ -21,7 +45,7 @@ const ContactUsForm = () => {
       email: Yup.string()
         .email("Invalid email address")
         .required("Email is required"),
-      service: Yup.string().required("Service is required"),
+      service: Yup.array().required("Service is required"),
       message: Yup.string().required("Message is required"),
       address: Yup.string().required("Address is required"),
       number: Yup.string()
@@ -32,6 +56,21 @@ const ContactUsForm = () => {
       console.log(value);
     },
   });
+
+  const [totalPrice, setTotalPrice] = React.useState(
+    defaultSelectedServices.reduce((acc, service) => acc + service.price, 0)
+  );
+
+  React.useEffect(() => {
+    const total = contactUsSchema.values.service.reduce((acc, serviceId) => {
+      const service = serviceOptions.find(
+        (option) => option.value === serviceId
+      );
+      return acc + (service ? service.price : 0);
+    }, 0);
+    setTotalPrice(total);
+  }, [contactUsSchema.values.service]);
+
   return (
     <form
       className=" w-full flex flex-col gap-[25px]"
@@ -102,14 +141,32 @@ const ContactUsForm = () => {
         <Text variant="span" className="font-normal">
           Select Service
         </Text>
-        <Input
+
+        <MultiSelect
           name="service"
           id="service"
-          value={contactUsSchema.values.service}
-          onChange={contactUsSchema.handleChange}
-          onBlur={contactUsSchema.handleBlur}
-          className="w-full"
+          options={serviceOptions}
+          onValueChange={(value) =>
+            contactUsSchema.setFieldValue("service", value)
+          }
+          defaultValue={
+            defaultServices.length > 0 ? defaultServices : undefined
+          }
+          placeholder={"Select service"}
+          variant="inverted"
+          animation={2}
+          maxCount={3}
         />
+
+        {totalPrice > 0 && (
+          <div className=" flex justify-end">
+            <p className=" text-secondary_foreground font-normal">
+              Total Price:{" "}
+              <span className=" font-medium text-primary">रु {totalPrice}</span>{" "}
+            </p>
+          </div>
+        )}
+
         {contactUsSchema.touched.service && contactUsSchema.errors.service && (
           <p className="text-red-500 text-sm ">
             {contactUsSchema.errors.service}
@@ -158,7 +215,7 @@ const ContactUsForm = () => {
       </div>
       <div>
         <Button type="submit" variant="default">
-          Submit
+          Confirm Appointment
         </Button>
       </div>
     </form>

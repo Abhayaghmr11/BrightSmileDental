@@ -26,3 +26,9 @@ export type team = {
   NMC_id?: string;
   description: string;
 };
+
+export type whychooseUs={
+  id:number;
+  title:string;
+  desc:string;
+};

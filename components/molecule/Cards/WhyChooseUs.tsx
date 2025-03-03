@@ -3,8 +3,10 @@ import Chooseus from "@/public/assets/images/Chooseus.png"
 import Text from '@/components/atom/Text'
 import { LiaStethoscopeSolid } from "react-icons/lia";
 
+import { whychooseUs } from '@/app/interface/types';
 import Image from 'next/image'
-const WhyChooseUs = () => {
+
+const WhyChooseUs = ({item}:{item:whychooseUs}) => {
     return (
         <>
             <div className='max-w-[395px] flex flex-col gap-[10px] h-full  cursor-pointer rounded-[20px] p-[10px] border border-border_color hover:shadow-md ease-in-out duration-300 transition-all'>
@@ -21,19 +23,19 @@ const WhyChooseUs = () => {
                 <div className='px-[10px] space-y-1'>
                     <div>
                         <Text variant='body'>
-                            State of the Art Technology
+                            {item.title}
                         </Text>
                     </div>
 
-                    <div className='flex flex-col gap-[10px] justify-between h-full '>
+                    <div className='flex flex-col gap-[5px] justify-center '>
                         {/* paragraph */}
-                        <div>
-                            <Text className='text-secondary_foreground line-clamp-2 ' variant='span'>We use the latest equipment and techniques for precise and effective treatments.</Text>
+                        <div className='flex-1'>
+                            <Text className='text-secondary_foreground line-clamp-2 h-[35px]' variant='span'>{item.desc}</Text>
                         </div>
                         {/* Bottom Numbering and Image */}
                         <div className='flex flex-row items-center justify-between'>
                             <Text className='text-primary font-black' variant='heading'>
-                                01
+                                0{item.id}
                             </Text>
                             <LiaStethoscopeSolid className='text-primary w-[25px] h-[25px]'  />
                         </div>
