@@ -14,7 +14,7 @@ export default function Home() {
     <main>
       <Suspense
         fallback={
-          <div className=" h-full w-full flex justify-center items-center">
+          <div className=" h-screen w-full flex justify-center items-center">
             <LoadingLottie />
           </div>
         }
