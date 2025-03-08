@@ -2,17 +2,11 @@ import Banner from "@/components/organism/Banner";
 import ContactUs from "@/components/organism/landing/ContactUs";
 import GoogleMapsContainer from "@/components/organism/landing/GoogleMaps";
 import React, { Suspense } from "react";
-import LoadingLottie from "@/components/molecule/LoadingLottie";
+import Loading from "../loading";
 
 const Contact = () => {
   return (
-    <Suspense
-      fallback={
-        <div className=" h-screen w-full flex justify-center items-center">
-          <LoadingLottie />
-        </div>
-      }
-    >
+    <Suspense fallback={<Loading />}>
       <ContactUs />
       <Banner />
       <GoogleMapsContainer />
