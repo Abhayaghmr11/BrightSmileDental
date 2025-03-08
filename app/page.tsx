@@ -7,18 +7,12 @@ import Teams from "@/components/organism/landing/Teams";
 import Banner from "@/components/organism/Banner";
 import ContactUs from "@/components/organism/landing/ContactUs";
 import GoogleMapsContainer from "@/components/organism/landing/GoogleMaps";
-import LoadingLottie from "@/components/molecule/LoadingLottie";
+import Loading from "./loading";
 
 export default function Home() {
   return (
     <main>
-      <Suspense
-        fallback={
-          <div className=" h-full w-full flex justify-center items-center">
-            <LoadingLottie />
-          </div>
-        }
-      >
+      <Suspense fallback={<Loading />}>
         <HeroLanding />
         <Testimonials />
         <Services />
