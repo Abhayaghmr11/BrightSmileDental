@@ -6,6 +6,7 @@ import Button from "@/components/atom/Button";
 import Text from "@/components/atom/Text";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeroLanding = () => {
   return (
@@ -27,8 +28,12 @@ const HeroLanding = () => {
           </div>
           {/* Buttons */}
           <div className=" flex gap-[15px] flex-wrap-reverse">
-            <Button variant="default">Book Your Appointment Now</Button>
-            <Button variant="secondary">Get Started</Button>
+            <Link href={"/contact"}>
+              <Button variant="default">Book Your Appointment Now</Button>
+            </Link>
+            <Link href={"/services"}>
+              <Button variant="secondary">Explore Services</Button>
+            </Link>
           </div>
         </div>
         {/* Background Hero image */}

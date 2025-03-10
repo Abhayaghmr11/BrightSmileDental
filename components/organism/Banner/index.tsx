@@ -7,6 +7,7 @@ import { BannerItem } from "@/app/interface/types";
 import { phoneNumber, companyEmail } from "@/app/constants/config";
 import Button from "@/components/atom/Button";
 import Text from "@/components/atom/Text";
+import Link from "next/link";
 
 const bannerData: BannerItem[] = [
   {
@@ -54,7 +55,7 @@ const DetailComponent = ({ title, Icon, detail }: BannerItem) => {
         </Text>
       </div>
       {detail?.map((info, index: number) => (
-        <div className="pl-[35px]" key={`${title}${index}`}>
+        <div className="pl-[31px]" key={`${title}${index}`}>
           <Text variant="body" className=" text-white">
             {info?.data}
           </Text>
@@ -66,7 +67,7 @@ const DetailComponent = ({ title, Icon, detail }: BannerItem) => {
 
 const Banner = () => {
   return (
-    <div className="  bg-primary">
+    <div className="bg-primary">
       <div className=" max-w-[1440px] items-center flex justify-around mx-auto py-[45px] px-[110px] flex-col lg:flex-row gap-[15px]">
         {bannerData?.map((banner) => (
           <div className=" hidden lg:block" key={banner.title}>
@@ -89,7 +90,9 @@ const Banner = () => {
             </span>
           </Text>
         </div>
-        <Button variant="secondary">Book an Appointment</Button>
+        <Link href={"/contact"}>
+          <Button variant="secondary">Book an Appointment</Button>
+        </Link>
       </div>
     </div>
   );
