@@ -1,6 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
+import Rating from "../molecule/Rating";
 import React, { useEffect, useState } from "react";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 
@@ -12,9 +13,9 @@ export const InfiniteMovingCards = ({
   className,
 }: {
   items: {
-    quote: string;
+    review: string;
     name: string;
-    title: string;
+    rating: number;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -66,7 +67,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "40s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "80s");
+        containerRef.current.style.setProperty("--animation-duration", "100s");
       }
     }
   };
@@ -98,17 +99,15 @@ export const InfiniteMovingCards = ({
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
               <span className=" relative z-20 text-sm  text-secondary_foreground font-normal text-justify">
-                {item.quote}
+                {item?.review}
               </span>
               <div className="relative z-20 mt-6 flex flex-row text-secondary_foreground items-center justify-end">
-                <span className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1">
                   <span className=" text-sm text-end leading-[1.6]  font-normal">
-                    {item.name}
+                    {item?.name}
                   </span>
-                  <span className=" text-sm text-end leading-[1.6]  font-normal">
-                    {item.title}
-                  </span>
-                </span>
+                  <Rating rating={item.rating} />
+                </div>
               </div>
             </blockquote>
           </li>
