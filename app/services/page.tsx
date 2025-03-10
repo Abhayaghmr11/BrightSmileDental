@@ -33,7 +33,7 @@ const Services = async ({
   );
 
   const sortedServices = filteredServices.sort((a, b) =>
-    searchParam?.sort === "low" ? a.price - b.price : b.price - a.price
+    searchParam?.sort === "high" ? b.price - a.price : a.price - b.price
   );
 
   return (

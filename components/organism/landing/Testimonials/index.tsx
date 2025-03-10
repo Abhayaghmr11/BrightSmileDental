@@ -1,8 +1,6 @@
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
-import Rating from "@/components/molecule/Rating";
 import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCard";
-import React from "react";
 
 const Testimonials = () => {
   const testimonials = [
