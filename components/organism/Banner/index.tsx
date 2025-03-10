@@ -54,7 +54,7 @@ const DetailComponent = ({ title, Icon, detail }: BannerItem) => {
         </Text>
       </div>
       {detail?.map((info, index: number) => (
-        <div className="pl-[35px]" key={`${title}${index}`}>
+        <div className="pl-[31px]" key={`${title}${index}`}>
           <Text variant="body" className=" text-white">
             {info?.data}
           </Text>

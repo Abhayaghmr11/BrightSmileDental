@@ -1,9 +1,15 @@
 import React, { Suspense } from "react";
+import { Metadata } from "next";
+
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
 import MaxWidthWrapper from "@/components/Layout/MaxWidthWrapper";
 import TeamContent from "@/components/molecule/TeamContent";
 import { Team } from "../constants/config";
 import Loading from "../loading";
+
+export const metadata: Metadata = {
+  title: "Teams | Bright Smile Dental Clinic",
+};
 
 const Teams = () => {
   return (

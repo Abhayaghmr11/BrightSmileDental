@@ -1,5 +1,6 @@
 import React from "react";
 import { Suspense } from "react";
+import { Metadata } from "next";
 
 import { Skeleton } from "@/components/ui/skeleton";
 import ContainerWrapper from "@/components/Layout/ContainerWrapper";
@@ -9,6 +10,10 @@ import FilterComponent from "@/components/molecule/FilterComponent";
 import { ServiceData } from "../constants/config";
 import ServiceContent from "@/components/molecule/ServiceContent";
 import Loading from "../loading";
+
+export const metadata: Metadata = {
+  title: "Services | Bright Smile Dental Clinic",
+};
 
 const Services = async ({
   searchParams,
